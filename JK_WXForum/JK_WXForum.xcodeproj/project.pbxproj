@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8B899721E082C2200ED57E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899711E082C2200ED57E3 /* main.m */; };
+		E8B899751E082C2200ED57E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899741E082C2200ED57E3 /* AppDelegate.m */; };
+		E8B8997B1E082C2200ED57E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B899791E082C2200ED57E3 /* Main.storyboard */; };
+		E8B8997D1E082C2200ED57E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B8997C1E082C2200ED57E3 /* Assets.xcassets */; };
+		E8B899801E082C2200ED57E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B8997E1E082C2200ED57E3 /* LaunchScreen.storyboard */; };
+		E8B8998B1E082C2200ED57E3 /* JK_WXForumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B8998A1E082C2200ED57E3 /* JK_WXForumTests.m */; };
+		E8B899961E082C2200ED57E3 /* JK_WXForumUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899951E082C2200ED57E3 /* JK_WXForumUITests.m */; };
+		E8B899B21E0834A400ED57E3 /* JKForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899B11E0834A400ED57E3 /* JKForumViewController.m */; };
+		E8B899B51E0834E100ED57E3 /* JKIssueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899B41E0834E100ED57E3 /* JKIssueViewController.m */; };
+		E8B899B81E0834FA00ED57E3 /* JKNetSchollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899B71E0834FA00ED57E3 /* JKNetSchollViewController.m */; };
+		E8B899BB1E08354E00ED57E3 /* JKProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899BA1E08354E00ED57E3 /* JKProfileViewController.m */; };
+		E8B899BE1E08357000ED57E3 /* JKWXForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899BD1E08357000ED57E3 /* JKWXForumViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8B899871E082C2200ED57E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B899651E082C2200ED57E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8B8996C1E082C2200ED57E3;
+			remoteInfo = JK_WXForum;
+		};
+		E8B899921E082C2200ED57E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B899651E082C2200ED57E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8B8996C1E082C2200ED57E3;
+			remoteInfo = JK_WXForum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E8B8996D1E082C2200ED57E3 /* JK_WXForum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JK_WXForum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B899711E082C2200ED57E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8B899731E082C2200ED57E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8B899741E082C2200ED57E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8B8997A1E082C2200ED57E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8B8997C1E082C2200ED57E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8B8997F1E082C2200ED57E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8B899811E082C2200ED57E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B899861E082C2200ED57E3 /* JK_WXForumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JK_WXForumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B8998A1E082C2200ED57E3 /* JK_WXForumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JK_WXForumTests.m; sourceTree = "<group>"; };
+		E8B8998C1E082C2200ED57E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B899911E082C2200ED57E3 /* JK_WXForumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JK_WXForumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B899951E082C2200ED57E3 /* JK_WXForumUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JK_WXForumUITests.m; sourceTree = "<group>"; };
+		E8B899971E082C2200ED57E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B899B01E0834A400ED57E3 /* JKForumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKForumViewController.h; sourceTree = "<group>"; };
+		E8B899B11E0834A400ED57E3 /* JKForumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKForumViewController.m; sourceTree = "<group>"; };
+		E8B899B31E0834E100ED57E3 /* JKIssueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKIssueViewController.h; sourceTree = "<group>"; };
+		E8B899B41E0834E100ED57E3 /* JKIssueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKIssueViewController.m; sourceTree = "<group>"; };
+		E8B899B61E0834FA00ED57E3 /* JKNetSchollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKNetSchollViewController.h; sourceTree = "<group>"; };
+		E8B899B71E0834FA00ED57E3 /* JKNetSchollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKNetSchollViewController.m; sourceTree = "<group>"; };
+		E8B899B91E08354E00ED57E3 /* JKProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKProfileViewController.h; sourceTree = "<group>"; };
+		E8B899BA1E08354E00ED57E3 /* JKProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKProfileViewController.m; sourceTree = "<group>"; };
+		E8B899BC1E08357000ED57E3 /* JKWXForumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKWXForumViewController.h; sourceTree = "<group>"; };
+		E8B899BD1E08357000ED57E3 /* JKWXForumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKWXForumViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8B8996A1E082C2200ED57E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B899831E082C2200ED57E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B8998E1E082C2200ED57E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8B899641E082C2200ED57E3 = {
+			isa = PBXGroup;
+			children = (
+				E8B8996F1E082C2200ED57E3 /* JK_WXForum */,
+				E8B899891E082C2200ED57E3 /* JK_WXForumTests */,
+				E8B899941E082C2200ED57E3 /* JK_WXForumUITests */,
+				E8B8996E1E082C2200ED57E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8B8996E1E082C2200ED57E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8B8996D1E082C2200ED57E3 /* JK_WXForum.app */,
+				E8B899861E082C2200ED57E3 /* JK_WXForumTests.xctest */,
+				E8B899911E082C2200ED57E3 /* JK_WXForumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8B8996F1E082C2200ED57E3 /* JK_WXForum */ = {
+			isa = PBXGroup;
+			children = (
+				E8B899A61E082F7D00ED57E3 /* Main */,
+				E8B899A91E082FB200ED57E3 /* Views */,
+				E8B899A31E082F7D00ED57E3 /* Classes */,
+				E8B899A41E082F7D00ED57E3 /* EndPoints */,
+				E8B899A51E082F7D00ED57E3 /* Extension */,
+				E8B899A71E082F7D00ED57E3 /* Models */,
+				E8B899A81E082F7D00ED57E3 /* Tools */,
+				E8B899731E082C2200ED57E3 /* AppDelegate.h */,
+				E8B899741E082C2200ED57E3 /* AppDelegate.m */,
+				E8B899791E082C2200ED57E3 /* Main.storyboard */,
+				E8B8997C1E082C2200ED57E3 /* Assets.xcassets */,
+				E8B8997E1E082C2200ED57E3 /* LaunchScreen.storyboard */,
+				E8B899811E082C2200ED57E3 /* Info.plist */,
+				E8B899701E082C2200ED57E3 /* Supporting Files */,
+			);
+			path = JK_WXForum;
+			sourceTree = "<group>";
+		};
+		E8B899701E082C2200ED57E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8B899711E082C2200ED57E3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8B899891E082C2200ED57E3 /* JK_WXForumTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8B8998A1E082C2200ED57E3 /* JK_WXForumTests.m */,
+				E8B8998C1E082C2200ED57E3 /* Info.plist */,
+			);
+			path = JK_WXForumTests;
+			sourceTree = "<group>";
+		};
+		E8B899941E082C2200ED57E3 /* JK_WXForumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E8B899951E082C2200ED57E3 /* JK_WXForumUITests.m */,
+				E8B899971E082C2200ED57E3 /* Info.plist */,
+			);
+			path = JK_WXForumUITests;
+			sourceTree = "<group>";
+		};
+		E8B899A31E082F7D00ED57E3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E8B899AF1E08345B00ED57E3 /* WXForum */,
+				E8B899AB1E08345B00ED57E3 /* Forum */,
+				E8B899AC1E08345B00ED57E3 /* Issue */,
+				E8B899AD1E08345B00ED57E3 /* NetSchool */,
+				E8B899AE1E08345B00ED57E3 /* Profile */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E8B899A41E082F7D00ED57E3 /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		E8B899A51E082F7D00ED57E3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E8B899A61E082F7D00ED57E3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E8B899AA1E0830D400ED57E3 /* Controllers */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E8B899A71E082F7D00ED57E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E8B899A81E082F7D00ED57E3 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		E8B899A91E082FB200ED57E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8B899AA1E0830D400ED57E3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E8B899AB1E08345B00ED57E3 /* Forum */ = {
+			isa = PBXGroup;
+			children = (
+				E8B899B01E0834A400ED57E3 /* JKForumViewController.h */,
+				E8B899B11E0834A400ED57E3 /* JKForumViewController.m */,
+			);
+			path = Forum;
+			sourceTree = "<group>";
+		};
+		E8B899AC1E08345B00ED57E3 /* Issue */ = {
+			isa = PBXGroup;
+			children = (
+				E8B899B31E0834E100ED57E3 /* JKIssueViewController.h */,
+				E8B899B41E0834E100ED57E3 /* JKIssueViewController.m */,
+			);
+			path = Issue;
+			sourceTree = "<group>";
+		};
+		E8B899AD1E08345B00ED57E3 /* NetSchool */ = {
+			isa = PBXGroup;
+			children = (
+				E8B899B61E0834FA00ED57E3 /* JKNetSchollViewController.h */,
+				E8B899B71E0834FA00ED57E3 /* JKNetSchollViewController.m */,
+			);
+			path = NetSchool;
+			sourceTree = "<group>";
+		};
+		E8B899AE1E08345B00ED57E3 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E8B899B91E08354E00ED57E3 /* JKProfileViewController.h */,
+				E8B899BA1E08354E00ED57E3 /* JKProfileViewController.m */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E8B899AF1E08345B00ED57E3 /* WXForum */ = {
+			isa = PBXGroup;
+			children = (
+				E8B899BC1E08357000ED57E3 /* JKWXForumViewController.h */,
+				E8B899BD1E08357000ED57E3 /* JKWXForumViewController.m */,
+			);
+			path = WXForum;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8B8996C1E082C2200ED57E3 /* JK_WXForum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8B8999A1E082C2200ED57E3 /* Build configuration list for PBXNativeTarget "JK_WXForum" */;
+			buildPhases = (
+				E8B899691E082C2200ED57E3 /* Sources */,
+				E8B8996A1E082C2200ED57E3 /* Frameworks */,
+				E8B8996B1E082C2200ED57E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JK_WXForum;
+			productName = JK_WXForum;
+			productReference = E8B8996D1E082C2200ED57E3 /* JK_WXForum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8B899851E082C2200ED57E3 /* JK_WXForumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8B8999D1E082C2200ED57E3 /* Build configuration list for PBXNativeTarget "JK_WXForumTests" */;
+			buildPhases = (
+				E8B899821E082C2200ED57E3 /* Sources */,
+				E8B899831E082C2200ED57E3 /* Frameworks */,
+				E8B899841E082C2200ED57E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8B899881E082C2200ED57E3 /* PBXTargetDependency */,
+			);
+			name = JK_WXForumTests;
+			productName = JK_WXForumTests;
+			productReference = E8B899861E082C2200ED57E3 /* JK_WXForumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E8B899901E082C2200ED57E3 /* JK_WXForumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8B899A01E082C2200ED57E3 /* Build configuration list for PBXNativeTarget "JK_WXForumUITests" */;
+			buildPhases = (
+				E8B8998D1E082C2200ED57E3 /* Sources */,
+				E8B8998E1E082C2200ED57E3 /* Frameworks */,
+				E8B8998F1E082C2200ED57E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8B899931E082C2200ED57E3 /* PBXTargetDependency */,
+			);
+			name = JK_WXForumUITests;
+			productName = JK_WXForumUITests;
+			productReference = E8B899911E082C2200ED57E3 /* JK_WXForumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8B899651E082C2200ED57E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Jackey;
+				TargetAttributes = {
+					E8B8996C1E082C2200ED57E3 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					E8B899851E082C2200ED57E3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E8B8996C1E082C2200ED57E3;
+					};
+					E8B899901E082C2200ED57E3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E8B8996C1E082C2200ED57E3;
+					};
+				};
+			};
+			buildConfigurationList = E8B899681E082C2200ED57E3 /* Build configuration list for PBXProject "JK_WXForum" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8B899641E082C2200ED57E3;
+			productRefGroup = E8B8996E1E082C2200ED57E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8B8996C1E082C2200ED57E3 /* JK_WXForum */,
+				E8B899851E082C2200ED57E3 /* JK_WXForumTests */,
+				E8B899901E082C2200ED57E3 /* JK_WXForumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8B8996B1E082C2200ED57E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B899801E082C2200ED57E3 /* LaunchScreen.storyboard in Resources */,
+				E8B8997D1E082C2200ED57E3 /* Assets.xcassets in Resources */,
+				E8B8997B1E082C2200ED57E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B899841E082C2200ED57E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B8998F1E082C2200ED57E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8B899691E082C2200ED57E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B899751E082C2200ED57E3 /* AppDelegate.m in Sources */,
+				E8B899BB1E08354E00ED57E3 /* JKProfileViewController.m in Sources */,
+				E8B899BE1E08357000ED57E3 /* JKWXForumViewController.m in Sources */,
+				E8B899B21E0834A400ED57E3 /* JKForumViewController.m in Sources */,
+				E8B899721E082C2200ED57E3 /* main.m in Sources */,
+				E8B899B51E0834E100ED57E3 /* JKIssueViewController.m in Sources */,
+				E8B899B81E0834FA00ED57E3 /* JKNetSchollViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B899821E082C2200ED57E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B8998B1E082C2200ED57E3 /* JK_WXForumTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B8998D1E082C2200ED57E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B899961E082C2200ED57E3 /* JK_WXForumUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8B899881E082C2200ED57E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8B8996C1E082C2200ED57E3 /* JK_WXForum */;
+			targetProxy = E8B899871E082C2200ED57E3 /* PBXContainerItemProxy */;
+		};
+		E8B899931E082C2200ED57E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8B8996C1E082C2200ED57E3 /* JK_WXForum */;
+			targetProxy = E8B899921E082C2200ED57E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E8B899791E082C2200ED57E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8B8997A1E082C2200ED57E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8B8997E1E082C2200ED57E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8B8997F1E082C2200ED57E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8B899981E082C2200ED57E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E8B899991E082C2200ED57E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8B8999B1E082C2200ED57E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JK_WXForum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gjt.JK-WXForum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8B8999C1E082C2200ED57E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JK_WXForum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gjt.JK-WXForum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E8B8999E1E082C2200ED57E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JK_WXForumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gjt.JK-WXForumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JK_WXForum.app/JK_WXForum";
+			};
+			name = Debug;
+		};
+		E8B8999F1E082C2200ED57E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JK_WXForumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gjt.JK-WXForumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JK_WXForum.app/JK_WXForum";
+			};
+			name = Release;
+		};
+		E8B899A11E082C2200ED57E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JK_WXForumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gjt.JK-WXForumUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JK_WXForum;
+			};
+			name = Debug;
+		};
+		E8B899A21E082C2200ED57E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JK_WXForumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gjt.JK-WXForumUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JK_WXForum;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8B899681E082C2200ED57E3 /* Build configuration list for PBXProject "JK_WXForum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B899981E082C2200ED57E3 /* Debug */,
+				E8B899991E082C2200ED57E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8B8999A1E082C2200ED57E3 /* Build configuration list for PBXNativeTarget "JK_WXForum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B8999B1E082C2200ED57E3 /* Debug */,
+				E8B8999C1E082C2200ED57E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E8B8999D1E082C2200ED57E3 /* Build configuration list for PBXNativeTarget "JK_WXForumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B8999E1E082C2200ED57E3 /* Debug */,
+				E8B8999F1E082C2200ED57E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E8B899A01E082C2200ED57E3 /* Build configuration list for PBXNativeTarget "JK_WXForumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B899A11E082C2200ED57E3 /* Debug */,
+				E8B899A21E082C2200ED57E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8B899651E082C2200ED57E3 /* Project object */;
+}
