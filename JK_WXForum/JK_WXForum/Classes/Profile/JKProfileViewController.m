@@ -14,9 +14,15 @@
 
 @implementation JKProfileViewController
 
+-(instancetype)init
+{
+    self.title = @"我的";
+    return  [super init];
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {

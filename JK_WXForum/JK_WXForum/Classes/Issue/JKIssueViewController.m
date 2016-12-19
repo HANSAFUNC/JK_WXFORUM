@@ -14,9 +14,15 @@
 
 @implementation JKIssueViewController
 
+-(instancetype)init
+{
+   self.title = @"吹吹";
+    return  [super init];
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {

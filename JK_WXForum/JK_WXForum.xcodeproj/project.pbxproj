@@ -19,6 +19,12 @@
 		E8B899B81E0834FA00ED57E3 /* JKNetSchollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899B71E0834FA00ED57E3 /* JKNetSchollViewController.m */; };
 		E8B899BB1E08354E00ED57E3 /* JKProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899BA1E08354E00ED57E3 /* JKProfileViewController.m */; };
 		E8B899BE1E08357000ED57E3 /* JKWXForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899BD1E08357000ED57E3 /* JKWXForumViewController.m */; };
+		E8B899C11E08365500ED57E3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899C01E08365500ED57E3 /* MainViewController.m */; };
+		E8B899C61E08495500ED57E3 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899C51E08495500ED57E3 /* UIView+Frame.m */; };
+		E8B899C91E08516D00ED57E3 /* UIImage+Render.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899C81E08516D00ED57E3 /* UIImage+Render.m */; };
+		E8B899CC1E08620E00ED57E3 /* JKNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899CB1E08620E00ED57E3 /* JKNavgationController.m */; };
+		E8B899CF1E08682900ED57E3 /* UIButton+buttonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899CE1E08682900ED57E3 /* UIButton+buttonItem.m */; };
+		E8B899D21E086B3800ED57E3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899D11E086B3800ED57E3 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +69,20 @@
 		E8B899BA1E08354E00ED57E3 /* JKProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKProfileViewController.m; sourceTree = "<group>"; };
 		E8B899BC1E08357000ED57E3 /* JKWXForumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKWXForumViewController.h; sourceTree = "<group>"; };
 		E8B899BD1E08357000ED57E3 /* JKWXForumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKWXForumViewController.m; sourceTree = "<group>"; };
+		E8B899BF1E08365500ED57E3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E8B899C01E08365500ED57E3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E8B899C21E0836D600ED57E3 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		E8B899C31E08487E00ED57E3 /* WX_Prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WX_Prefix.h; sourceTree = "<group>"; };
+		E8B899C41E08495500ED57E3 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		E8B899C51E08495500ED57E3 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		E8B899C71E08516D00ED57E3 /* UIImage+Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Render.h"; sourceTree = "<group>"; };
+		E8B899C81E08516D00ED57E3 /* UIImage+Render.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Render.m"; sourceTree = "<group>"; };
+		E8B899CA1E08620E00ED57E3 /* JKNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKNavgationController.h; sourceTree = "<group>"; };
+		E8B899CB1E08620E00ED57E3 /* JKNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKNavgationController.m; sourceTree = "<group>"; };
+		E8B899CD1E08682900ED57E3 /* UIButton+buttonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+buttonItem.h"; sourceTree = "<group>"; };
+		E8B899CE1E08682900ED57E3 /* UIButton+buttonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+buttonItem.m"; sourceTree = "<group>"; };
+		E8B899D01E086B3800ED57E3 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		E8B899D11E086B3800ED57E3 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				E8B899711E082C2200ED57E3 /* main.m */,
+				E8B899C31E08487E00ED57E3 /* WX_Prefix.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -161,9 +182,9 @@
 			isa = PBXGroup;
 			children = (
 				E8B899AF1E08345B00ED57E3 /* WXForum */,
-				E8B899AB1E08345B00ED57E3 /* Forum */,
-				E8B899AC1E08345B00ED57E3 /* Issue */,
 				E8B899AD1E08345B00ED57E3 /* NetSchool */,
+				E8B899AC1E08345B00ED57E3 /* Issue */,
+				E8B899AB1E08345B00ED57E3 /* Forum */,
 				E8B899AE1E08345B00ED57E3 /* Profile */,
 			);
 			path = Classes;
@@ -179,6 +200,12 @@
 		E8B899A51E082F7D00ED57E3 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E8B899C41E08495500ED57E3 /* UIView+Frame.h */,
+				E8B899C51E08495500ED57E3 /* UIView+Frame.m */,
+				E8B899C71E08516D00ED57E3 /* UIImage+Render.h */,
+				E8B899C81E08516D00ED57E3 /* UIImage+Render.m */,
+				E8B899CD1E08682900ED57E3 /* UIButton+buttonItem.h */,
+				E8B899CE1E08682900ED57E3 /* UIButton+buttonItem.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -186,6 +213,7 @@
 		E8B899A61E082F7D00ED57E3 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E8B899C21E0836D600ED57E3 /* Singleton.h */,
 				E8B899AA1E0830D400ED57E3 /* Controllers */,
 			);
 			path = Main;
@@ -215,6 +243,12 @@
 		E8B899AA1E0830D400ED57E3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E8B899BF1E08365500ED57E3 /* MainViewController.h */,
+				E8B899C01E08365500ED57E3 /* MainViewController.m */,
+				E8B899CA1E08620E00ED57E3 /* JKNavgationController.h */,
+				E8B899CB1E08620E00ED57E3 /* JKNavgationController.m */,
+				E8B899D01E086B3800ED57E3 /* BaseViewController.h */,
+				E8B899D11E086B3800ED57E3 /* BaseViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -394,11 +428,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B899CF1E08682900ED57E3 /* UIButton+buttonItem.m in Sources */,
 				E8B899751E082C2200ED57E3 /* AppDelegate.m in Sources */,
 				E8B899BB1E08354E00ED57E3 /* JKProfileViewController.m in Sources */,
 				E8B899BE1E08357000ED57E3 /* JKWXForumViewController.m in Sources */,
+				E8B899C61E08495500ED57E3 /* UIView+Frame.m in Sources */,
+				E8B899CC1E08620E00ED57E3 /* JKNavgationController.m in Sources */,
+				E8B899C11E08365500ED57E3 /* MainViewController.m in Sources */,
 				E8B899B21E0834A400ED57E3 /* JKForumViewController.m in Sources */,
 				E8B899721E082C2200ED57E3 /* main.m in Sources */,
+				E8B899D21E086B3800ED57E3 /* BaseViewController.m in Sources */,
+				E8B899C91E08516D00ED57E3 /* UIImage+Render.m in Sources */,
 				E8B899B51E0834E100ED57E3 /* JKIssueViewController.m in Sources */,
 				E8B899B81E0834FA00ED57E3 /* JKNetSchollViewController.m in Sources */,
 			);
@@ -541,6 +581,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JK_WXForum/WX_Prefix.h;
 				INFOPLIST_FILE = JK_WXForum/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -553,6 +595,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JK_WXForum/WX_Prefix.h;
 				INFOPLIST_FILE = JK_WXForum/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

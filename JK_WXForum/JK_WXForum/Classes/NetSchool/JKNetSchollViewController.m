@@ -14,9 +14,15 @@
 
 @implementation JKNetSchollViewController
 
+-(instancetype)init
+{
+    self.title = @"网校";
+    return  [super init];
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {

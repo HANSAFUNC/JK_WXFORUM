@@ -14,9 +14,15 @@
 
 @implementation JKForumViewController
 
+-(instancetype)init
+{
+    self.title = @"论坛";
+    return  [super init];
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {

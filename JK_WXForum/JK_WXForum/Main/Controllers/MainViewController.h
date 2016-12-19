@@ -1,5 +1,5 @@
 //
-//  JKWXForumViewController.h
+//  MainViewController.h
 //  JK_WXForum
 //
 //  Created by jackey_gjt on 16/12/19.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
 
-@interface JKWXForumViewController : BaseViewController
+@interface MainViewController : UITabBarController
 
 @end
