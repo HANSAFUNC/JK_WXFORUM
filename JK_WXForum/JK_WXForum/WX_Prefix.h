@@ -13,6 +13,10 @@
 
 
 /**************** Config ****************/
+/**
+ * 基本URL
+ */
+#define JK_BaseRequestUrl @"http://api.pyua.net"
 
 #define kWXUdbAppId @"5060"       //web登陆的appid,uauth使用相当于getWebToken
 
@@ -68,14 +72,14 @@
 #define WIDTH(v)                (v).frame.size.width
 #define HEIGHT(v)               (v).frame.size.height
 
-#define MinX(v)                 CGRectGetMinX((v).frame)
-#define MinY(v)                 CGRectGetMinY((v).frame)
+#define JKMinX(v)                 CGRectGetMinX((v).frame)
+#define JKMinY(v)                 CGRectGetMinY((v).frame)
 
-#define MidX(v)                 CGRectGetMidX((v).frame)
-#define MidY(v)                 CGRectGetMidY((v).frame)
+#define JKMidX(v)                 CGRectGetMidX((v).frame)
+#define JKMidY(v)                 CGRectGetMidY((v).frame)
 
-#define MaxX(v)                 CGRectGetMaxX((v).frame)
-#define MaxY(v)                 CGRectGetMaxY((v).frame)
+#define JKMaxX(v)                 CGRectGetMaxX((v).frame)
+#define JKMaxY(v)                 CGRectGetMaxY((v).frame)
 
 /**************** 路径****************/
 // 沙盒路径
@@ -111,10 +115,7 @@
 
 
 
-/**
- * 基本URL
- */
-#define JK_BaseRequestUrl @"http://api.budejie.com/api/api_open.php"
+
 
 
 

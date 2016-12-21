@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		715D6E314C435F83D0F6A499 /* libPods-JK_WXForum.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 800C7A0137AF4CD094E4DBE3 /* libPods-JK_WXForum.a */; };
+		E81756CF1E0919A400E261F4 /* JKCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E81756CE1E0919A400E261F4 /* JKCustomButton.m */; };
+		E81756D31E092C5000E261F4 /* JKGeneralCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E81756D21E092C5000E261F4 /* JKGeneralCell.m */; };
+		E81756D51E09361500E261F4 /* JKGeneralCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E81756D41E09361500E261F4 /* JKGeneralCell.xib */; };
+		E81756D81E093A4000E261F4 /* GeneralModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E81756D71E093A4000E261F4 /* GeneralModel.m */; };
+		E81756DB1E093B3A00E261F4 /* NetWorkSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = E81756DA1E093B3A00E261F4 /* NetWorkSingleton.m */; };
+		E81756DF1E09404600E261F4 /* GeneralRequestVM.m in Sources */ = {isa = PBXBuildFile; fileRef = E81756DE1E09404600E261F4 /* GeneralRequestVM.m */; };
+		E81756E21E099F5000E261F4 /* OnLineoffLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E81756E11E099F5000E261F4 /* OnLineoffLineView.m */; };
+		E81756E51E099FF400E261F4 /* OnLineCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E81756E41E099FF400E261F4 /* OnLineCustomButton.m */; };
 		E8B899721E082C2200ED57E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899711E082C2200ED57E3 /* main.m */; };
 		E8B899751E082C2200ED57E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899741E082C2200ED57E3 /* AppDelegate.m */; };
 		E8B8997B1E082C2200ED57E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B899791E082C2200ED57E3 /* Main.storyboard */; };
@@ -45,6 +54,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31AE2F41644ADD620B10F9E5 /* Pods-JK_WXForum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JK_WXForum.release.xcconfig"; path = "Pods/Target Support Files/Pods-JK_WXForum/Pods-JK_WXForum.release.xcconfig"; sourceTree = "<group>"; };
+		800C7A0137AF4CD094E4DBE3 /* libPods-JK_WXForum.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JK_WXForum.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		930923F64D7B410AB349226A /* Pods-JK_WXForum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JK_WXForum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JK_WXForum/Pods-JK_WXForum.debug.xcconfig"; sourceTree = "<group>"; };
+		E81756CD1E0919A400E261F4 /* JKCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKCustomButton.h; path = ../Classes/WXForum/JKCustomButton.h; sourceTree = "<group>"; };
+		E81756CE1E0919A400E261F4 /* JKCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKCustomButton.m; path = ../Classes/WXForum/JKCustomButton.m; sourceTree = "<group>"; };
+		E81756D11E092C5000E261F4 /* JKGeneralCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKGeneralCell.h; sourceTree = "<group>"; };
+		E81756D21E092C5000E261F4 /* JKGeneralCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKGeneralCell.m; sourceTree = "<group>"; };
+		E81756D41E09361500E261F4 /* JKGeneralCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JKGeneralCell.xib; sourceTree = "<group>"; };
+		E81756D61E093A4000E261F4 /* GeneralModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralModel.h; sourceTree = "<group>"; };
+		E81756D71E093A4000E261F4 /* GeneralModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralModel.m; sourceTree = "<group>"; };
+		E81756D91E093B3A00E261F4 /* NetWorkSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkSingleton.h; sourceTree = "<group>"; };
+		E81756DA1E093B3A00E261F4 /* NetWorkSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkSingleton.m; sourceTree = "<group>"; };
+		E81756DD1E09404600E261F4 /* GeneralRequestVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralRequestVM.h; sourceTree = "<group>"; };
+		E81756DE1E09404600E261F4 /* GeneralRequestVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralRequestVM.m; sourceTree = "<group>"; };
+		E81756E01E099F5000E261F4 /* OnLineoffLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnLineoffLineView.h; sourceTree = "<group>"; };
+		E81756E11E099F5000E261F4 /* OnLineoffLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnLineoffLineView.m; sourceTree = "<group>"; };
+		E81756E31E099FF400E261F4 /* OnLineCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnLineCustomButton.h; sourceTree = "<group>"; };
+		E81756E41E099FF400E261F4 /* OnLineCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnLineCustomButton.m; sourceTree = "<group>"; };
 		E8B8996D1E082C2200ED57E3 /* JK_WXForum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JK_WXForum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B899711E082C2200ED57E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8B899731E082C2200ED57E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,7 +98,7 @@
 		E8B899BD1E08357000ED57E3 /* JKWXForumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKWXForumViewController.m; sourceTree = "<group>"; };
 		E8B899BF1E08365500ED57E3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		E8B899C01E08365500ED57E3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		E8B899C21E0836D600ED57E3 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		E8B899C21E0836D600ED57E3 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Singleton.h; path = ../Main/Singleton.h; sourceTree = "<group>"; };
 		E8B899C31E08487E00ED57E3 /* WX_Prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WX_Prefix.h; sourceTree = "<group>"; };
 		E8B899C41E08495500ED57E3 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		E8B899C51E08495500ED57E3 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
@@ -90,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715D6E314C435F83D0F6A499 /* libPods-JK_WXForum.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +138,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		799AEE222A5749114B2A6C7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				930923F64D7B410AB349226A /* Pods-JK_WXForum.debug.xcconfig */,
+				31AE2F41644ADD620B10F9E5 /* Pods-JK_WXForum.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9433205CFB34089D6C4A4BB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				800C7A0137AF4CD094E4DBE3 /* libPods-JK_WXForum.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E81756D01E0929D200E261F4 /* WXForumView */ = {
+			isa = PBXGroup;
+			children = (
+				E81756D11E092C5000E261F4 /* JKGeneralCell.h */,
+				E81756D21E092C5000E261F4 /* JKGeneralCell.m */,
+				E81756D41E09361500E261F4 /* JKGeneralCell.xib */,
+				E81756CD1E0919A400E261F4 /* JKCustomButton.h */,
+				E81756CE1E0919A400E261F4 /* JKCustomButton.m */,
+				E81756E01E099F5000E261F4 /* OnLineoffLineView.h */,
+				E81756E11E099F5000E261F4 /* OnLineoffLineView.m */,
+				E81756E31E099FF400E261F4 /* OnLineCustomButton.h */,
+				E81756E41E099FF400E261F4 /* OnLineCustomButton.m */,
+			);
+			name = WXForumView;
+			sourceTree = "<group>";
+		};
+		E81756DC1E093FD000E261F4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E81756DD1E09404600E261F4 /* GeneralRequestVM.h */,
+				E81756DE1E09404600E261F4 /* GeneralRequestVM.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		E8B899641E082C2200ED57E3 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +187,8 @@
 				E8B899891E082C2200ED57E3 /* JK_WXForumTests */,
 				E8B899941E082C2200ED57E3 /* JK_WXForumUITests */,
 				E8B8996E1E082C2200ED57E3 /* Products */,
+				799AEE222A5749114B2A6C7E /* Pods */,
+				9433205CFB34089D6C4A4BB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,11 +206,11 @@
 			isa = PBXGroup;
 			children = (
 				E8B899A61E082F7D00ED57E3 /* Main */,
+				E8B899A71E082F7D00ED57E3 /* Models */,
 				E8B899A91E082FB200ED57E3 /* Views */,
 				E8B899A31E082F7D00ED57E3 /* Classes */,
 				E8B899A41E082F7D00ED57E3 /* EndPoints */,
 				E8B899A51E082F7D00ED57E3 /* Extension */,
-				E8B899A71E082F7D00ED57E3 /* Models */,
 				E8B899A81E082F7D00ED57E3 /* Tools */,
 				E8B899731E082C2200ED57E3 /* AppDelegate.h */,
 				E8B899741E082C2200ED57E3 /* AppDelegate.m */,
@@ -213,7 +285,6 @@
 		E8B899A61E082F7D00ED57E3 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				E8B899C21E0836D600ED57E3 /* Singleton.h */,
 				E8B899AA1E0830D400ED57E3 /* Controllers */,
 			);
 			path = Main;
@@ -222,6 +293,9 @@
 		E8B899A71E082F7D00ED57E3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E81756DC1E093FD000E261F4 /* ViewModels */,
+				E81756D61E093A4000E261F4 /* GeneralModel.h */,
+				E81756D71E093A4000E261F4 /* GeneralModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -229,6 +303,9 @@
 		E8B899A81E082F7D00ED57E3 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				E81756D91E093B3A00E261F4 /* NetWorkSingleton.h */,
+				E81756DA1E093B3A00E261F4 /* NetWorkSingleton.m */,
+				E8B899C21E0836D600ED57E3 /* Singleton.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -236,6 +313,7 @@
 		E8B899A91E082FB200ED57E3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E81756D01E0929D200E261F4 /* WXForumView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -305,9 +383,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8B8999A1E082C2200ED57E3 /* Build configuration list for PBXNativeTarget "JK_WXForum" */;
 			buildPhases = (
+				CA027F8FB0B206024DD822B5 /* [CP] Check Pods Manifest.lock */,
 				E8B899691E082C2200ED57E3 /* Sources */,
 				E8B8996A1E082C2200ED57E3 /* Frameworks */,
 				E8B8996B1E082C2200ED57E3 /* Resources */,
+				874D1E3531B96C9BC1FC60E7 /* [CP] Embed Pods Frameworks */,
+				09D854759178BE3AF89DF81B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -402,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8B899801E082C2200ED57E3 /* LaunchScreen.storyboard in Resources */,
+				E81756D51E09361500E261F4 /* JKGeneralCell.xib in Resources */,
 				E8B8997D1E082C2200ED57E3 /* Assets.xcassets in Resources */,
 				E8B8997B1E082C2200ED57E3 /* Main.storyboard in Resources */,
 			);
@@ -423,6 +505,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09D854759178BE3AF89DF81B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JK_WXForum/Pods-JK_WXForum-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		874D1E3531B96C9BC1FC60E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JK_WXForum/Pods-JK_WXForum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA027F8FB0B206024DD822B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E8B899691E082C2200ED57E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -432,15 +562,22 @@
 				E8B899751E082C2200ED57E3 /* AppDelegate.m in Sources */,
 				E8B899BB1E08354E00ED57E3 /* JKProfileViewController.m in Sources */,
 				E8B899BE1E08357000ED57E3 /* JKWXForumViewController.m in Sources */,
+				E81756DB1E093B3A00E261F4 /* NetWorkSingleton.m in Sources */,
 				E8B899C61E08495500ED57E3 /* UIView+Frame.m in Sources */,
 				E8B899CC1E08620E00ED57E3 /* JKNavgationController.m in Sources */,
 				E8B899C11E08365500ED57E3 /* MainViewController.m in Sources */,
 				E8B899B21E0834A400ED57E3 /* JKForumViewController.m in Sources */,
+				E81756D81E093A4000E261F4 /* GeneralModel.m in Sources */,
 				E8B899721E082C2200ED57E3 /* main.m in Sources */,
 				E8B899D21E086B3800ED57E3 /* BaseViewController.m in Sources */,
+				E81756E21E099F5000E261F4 /* OnLineoffLineView.m in Sources */,
 				E8B899C91E08516D00ED57E3 /* UIImage+Render.m in Sources */,
+				E81756DF1E09404600E261F4 /* GeneralRequestVM.m in Sources */,
+				E81756CF1E0919A400E261F4 /* JKCustomButton.m in Sources */,
 				E8B899B51E0834E100ED57E3 /* JKIssueViewController.m in Sources */,
 				E8B899B81E0834FA00ED57E3 /* JKNetSchollViewController.m in Sources */,
+				E81756D31E092C5000E261F4 /* JKGeneralCell.m in Sources */,
+				E81756E51E099FF400E261F4 /* OnLineCustomButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +716,7 @@
 		};
 		E8B8999B1E082C2200ED57E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 930923F64D7B410AB349226A /* Pods-JK_WXForum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -593,6 +731,7 @@
 		};
 		E8B8999C1E082C2200ED57E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31AE2F41644ADD620B10F9E5 /* Pods-JK_WXForum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -670,6 +809,7 @@
 				E8B8999C1E082C2200ED57E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8B8999D1E082C2200ED57E3 /* Build configuration list for PBXNativeTarget "JK_WXForumTests" */ = {
 			isa = XCConfigurationList;
@@ -678,6 +818,7 @@
 				E8B8999F1E082C2200ED57E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8B899A01E082C2200ED57E3 /* Build configuration list for PBXNativeTarget "JK_WXForumUITests" */ = {
 			isa = XCConfigurationList;
@@ -686,6 +827,7 @@
 				E8B899A21E082C2200ED57E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
