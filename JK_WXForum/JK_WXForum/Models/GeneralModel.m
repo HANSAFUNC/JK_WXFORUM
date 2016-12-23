@@ -11,4 +11,12 @@
 @implementation GeneralModel
 
 
+-(CGFloat)cellH
+{
+    if (self.attachimg.count) {
+        return 200;
+    }else {
+        return 100;
+    }
+}
 @end

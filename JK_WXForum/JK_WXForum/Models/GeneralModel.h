@@ -21,7 +21,7 @@
 "forumname": "花草萌宠",
 "message": "好久没上无邪了，难得今天有空，赶紧把最近拍的家里的 ..."
  ****/
- 
+
 //用户名
 @property (nonatomic, strong) NSString * author;
 //账户id
@@ -40,6 +40,15 @@
 @property (nonatomic, strong) NSString * subject;
 //帖子数
 @property (nonatomic, strong) NSString * tid;
+
 @property (nonatomic, strong) NSString * views;
+
+//照片数
+@property (nonatomic ,strong) NSArray * attachimg;
+
+@property (nonatomic ,assign) CGFloat cellH;
+
+
+
 
 @end

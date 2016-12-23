@@ -11,24 +11,28 @@
 #import "GeneralRequestVM.h"
 #import "JKGeneralCell.h"
 #import "OnLineoffLineView.h"
+#import "GeneralModel.h"
+#import "MaxCycleView.h"
+#import <MJRefresh/MJRefresh.h>
 
 const static CGFloat kNavgationHeight = 30;
 const static CGFloat kContentViewHeight = 61;
 const static CGFloat kOnlineViewHeight = 80;
+const static CGFloat kCycleViewHeight = 140;
+
 static NSString * const generalCellID = @"kGeneralID";
-@interface JKWXForumViewController () <UITableViewDataSource>
+@interface JKWXForumViewController () <UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic ,strong) UIView * contentView;
 @property (nonatomic ,strong) UITableView * tableView;
 @property (nonatomic ,strong) GeneralRequestVM * GeneralVm;
+@property (nonatomic ,strong) MaxCycleView * maxCycleView;
 
 @end
-
 
 @implementation JKWXForumViewController
 
 
--(instancetype)init
-{
+-(instancetype)init {
     _GeneralVm = [[GeneralRequestVM alloc]init];
     self.title = @"无邪论坛";
     return  [super init];
@@ -37,7 +41,6 @@ static NSString * const generalCellID = @"kGeneralID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
-    [self loadAllData];
     
 }
 
@@ -45,6 +48,8 @@ static NSString * const generalCellID = @"kGeneralID";
     [self setupBarButtonItemView];
     [self setupTableView];
     [self setupOnlineView];
+    [self setupMaxCycleView];
+    [self setupLibMJRefresh];
 }
 
 - (void)setupBarButtonItemView {
@@ -52,13 +57,30 @@ static NSString * const generalCellID = @"kGeneralID";
     [super setupBarButtonItemType:1 normalImage:[UIImage imageNamed:@"签到"] hightLightImage:nil addTarget:self action:@selector(signInFadeShowSignView)];
 }
 
+- (void)setupLibMJRefresh {
+    MJRefreshNormalHeader * header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadAllData)];
+    header.automaticallyChangeAlpha = YES;
+    header.ignoredScrollViewContentInsetTop = kContentViewHeight + kOnlineViewHeight + kCycleViewHeight;
+    self.tableView.mj_header =header;
+    [header beginRefreshing];
+}
+
 - (void)loadAllData {
     [self.GeneralVm loadGeneralDataFinshedCallBack:^{
         [self.tableView reloadData];
         [self setupNavigationView];
+        [self.tableView.mj_header endRefreshing];
+        self.maxCycleView.maxCycleModels = self.GeneralVm.maxCycleModels;
+        
         
     }];
     
+}
+- (void)setupMaxCycleView {
+    MaxCycleView * cycle = [MaxCycleView loadXib];
+    cycle.frame = CGRectMake(0, -(kContentViewHeight + kOnlineViewHeight + kCycleViewHeight), JKSreenW, kCycleViewHeight);
+    _maxCycleView = cycle;
+    [self.tableView addSubview:cycle];
 }
 
 - (void)setupOnlineView {
@@ -71,8 +93,8 @@ static NSString * const generalCellID = @"kGeneralID";
 - (void)setupTableView{
     UITableView * tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
     tableView.dataSource = self;
-    tableView.rowHeight = 100;
-    tableView.contentInset = UIEdgeInsetsMake(kContentViewHeight + kOnlineViewHeight, 0, 0, 0);
+    tableView.delegate = self;
+    tableView.contentInset = UIEdgeInsetsMake(kContentViewHeight + kOnlineViewHeight + kCycleViewHeight, 0, 0, 0);
     tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [tableView registerNib:[UINib nibWithNibName:@"JKGeneralCell" bundle:nil] forCellReuseIdentifier:generalCellID];
     _tableView = tableView;
@@ -92,9 +114,13 @@ static NSString * const generalCellID = @"kGeneralID";
     
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    GeneralModel * model = self.GeneralVm.GeneralModels[indexPath.row];
+    return model.cellH;
+}
+
 
 - (void)setupNavigationView {
-    
     UIView * view = [[UIView alloc]init];
     view.backgroundColor = [UIColor lightGrayColor];
     view.frame = CGRectMake(0, -kContentViewHeight, JKSreenW, kContentViewHeight);
@@ -132,11 +158,17 @@ static NSString * const generalCellID = @"kGeneralID";
         CGFloat x = col * w + col * margin;
         CGFloat y = row * ( h + margin);
         btn.frame = CGRectMake(x, y, w, h);
+        btn.tag = [self.GeneralVm.navigationModels[i][@"fid"] integerValue];
+        [btn addTarget:self action:@selector(jumpToTopicTypeViewController:) forControlEvents:UIControlEventTouchUpInside];
         [view addSubview:btn];
         
     }
 }
-
+//导航跳转
+- (void)jumpToTopicTypeViewController:(UIButton *)btn {
+    
+    NSLog(@"%ld",btn.tag);
+}
 - (void)pushSearchViewController{
     
     NSLog(@"跳转查找控制器");

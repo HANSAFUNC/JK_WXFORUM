@@ -8,10 +8,9 @@
 
 #import "OnLineoffLineView.h"
 #import "OnLineCustomButton.h"
-
 const static CGFloat kOnlineViewHeight = 60;
-@implementation OnLineoffLineView
 
+@implementation OnLineoffLineView
 
 -(void)willMoveToSuperview:(UIView *)newSuperview{
     

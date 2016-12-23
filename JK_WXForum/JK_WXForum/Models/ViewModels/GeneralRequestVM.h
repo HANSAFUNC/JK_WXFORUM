@@ -11,5 +11,6 @@
 @interface GeneralRequestVM : NSObject
 @property (nonatomic ,strong) NSArray * GeneralModels;
 @property (nonatomic ,strong) NSArray * navigationModels;
+@property (nonatomic ,strong) NSArray * maxCycleModels;
 - (void)loadGeneralDataFinshedCallBack:(void(^)())finshedCallBack;
 @end

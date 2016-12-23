@@ -10,7 +10,7 @@
 #import "NetWorkSingleton.h"
 #import "MJExtension.h"
 #import "GeneralModel.h"
-
+#import "maxCycleModel.h"
 
 @implementation GeneralRequestVM
 
@@ -18,12 +18,11 @@
     
     [NetWorkSingleton requestData:GET requestUrl:@"http://api.pyua.net/?v=1&module=forumguide&page=1" parameters:nil finlishCallBack:^(id responseObject, NSError *error) {
         NSArray * tempArr = responseObject[@"variables"][@"data"];
+        NSArray * tempArrCyc = responseObject[@"variables"][@"slideshow"];
         _navigationModels = responseObject[@"variables"][@"navigation"];
-//        NSLog(tempArr);
-        
-        
+        _maxCycleModels = [maxCycleModel mj_objectArrayWithKeyValuesArray: tempArrCyc];
        _GeneralModels  = [GeneralModel mj_objectArrayWithKeyValuesArray: tempArr];
-        
+//        NSLog(@"%@",_maxCycleModels[1]);
         finshedCallBack();
         
     }];
