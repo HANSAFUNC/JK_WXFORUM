@@ -29,12 +29,12 @@
     
 }
 - (void)cancel {
-    [[NetWorkSingleton extensionContentTypeManager].tasks makeObjectsPerformSelector:@selector(cancel)];
+    [[NetWorkSingleton sharedManager].tasks makeObjectsPerformSelector:@selector(cancel)];
 }
 - (void)pasue {
-    [[NetWorkSingleton extensionContentTypeManager].tasks makeObjectsPerformSelector:@selector(pasue)];
+    [[NetWorkSingleton sharedManager].tasks makeObjectsPerformSelector:@selector(pasue)];
 }
 - (void)resume {
-    [[NetWorkSingleton extensionContentTypeManager].tasks makeObjectsPerformSelector:@selector(resume)];
+    [[NetWorkSingleton sharedManager].tasks makeObjectsPerformSelector:@selector(resume)];
 }
 @end

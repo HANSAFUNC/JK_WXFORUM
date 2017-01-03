@@ -21,11 +21,11 @@ typedef void(^finlishCallBack)(id result, NSError *  error);
 
 @interface NetWorkSingleton : AFHTTPSessionManager
 
-//+ (NetWorkSingleton *)sharedManager;
++ (NetWorkSingleton *)sharedManager;
 
 //interfaceSingleton(NetWorkSingleton);
 
-+ (NetWorkSingleton *)extensionContentTypeManager;
+//+ (NetWorkSingleton *)extensionContentTypeManager;
 
 + (void)requestData:(RequestType)type requestUrl:(NSString *)requestUrl parameters:(NSDictionary *)parameters  finlishCallBack:(void(^)(id responseObject,NSError *  error))finlishCallBack;
 

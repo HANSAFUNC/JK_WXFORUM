@@ -76,14 +76,14 @@ const static CGFloat kCycleViewHeight = 140;
 }
 - (void)setupMaxCycleView {
     MaxCycleView * cycle = [MaxCycleView loadXib];
-    cycle.frame = CGRectMake(0, -(kContentViewHeight + kOnlineViewHeight + kCycleViewHeight), JKSreenW, kCycleViewHeight);
+    cycle.frame = CGRectMake(0, -(kContentViewHeight + kOnlineViewHeight + kCycleViewHeight), JKScreenW, kCycleViewHeight);
     _maxCycleView = cycle;
     [self.tableView addSubview:cycle];
 }
 
 - (void)setupOnlineView {
     OnLineoffLineView * onlineView = [[OnLineoffLineView alloc]init];
-    onlineView.frame = CGRectMake(0, -(kContentViewHeight + kOnlineViewHeight), JKSreenW, kOnlineViewHeight);
+    onlineView.frame = CGRectMake(0, -(kContentViewHeight + kOnlineViewHeight), JKScreenW, kOnlineViewHeight);
     onlineView.backgroundColor = JKColor_RGB(240, 255, 255);
     [self.tableView addSubview:onlineView];
 }
@@ -97,7 +97,7 @@ const static CGFloat kCycleViewHeight = 140;
 - (void)setupNavigationView {
     UIView * view = [[UIView alloc]init];
     view.backgroundColor = [UIColor lightGrayColor];
-    view.frame = CGRectMake(0, -kContentViewHeight, JKSreenW, kContentViewHeight);
+    view.frame = CGRectMake(0, -kContentViewHeight, JKScreenW, kContentViewHeight);
     [self.tableView addSubview:view];
     int totalColums = 4;
     CGFloat margin = 1;
@@ -128,7 +128,7 @@ const static CGFloat kCycleViewHeight = 140;
         
         int col = i % totalColums;
         int row = i / totalColums;
-        CGFloat w = (JKSreenW - (totalColums * 1)) / totalColums;
+        CGFloat w = (JKScreenW - (totalColums * 1)) / totalColums;
         CGFloat x = col * w + col * margin;
         CGFloat y = row * ( h + margin);
         btn.frame = CGRectMake(x, y, w, h);

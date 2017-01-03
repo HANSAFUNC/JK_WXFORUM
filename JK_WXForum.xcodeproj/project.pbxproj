@@ -22,10 +22,14 @@
 		E81756DF1E09404600E261F4 /* GeneralRequestVM.m in Sources */ = {isa = PBXBuildFile; fileRef = E81756DE1E09404600E261F4 /* GeneralRequestVM.m */; };
 		E81756E21E099F5000E261F4 /* OnLineoffLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E81756E11E099F5000E261F4 /* OnLineoffLineView.m */; };
 		E81756E51E099FF400E261F4 /* OnLineCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E81756E41E099FF400E261F4 /* OnLineCustomButton.m */; };
+		E81C3BCA1E19549B00207ACE /* BaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E81C3BC91E19549B00207ACE /* BaseScrollViewController.m */; };
+		E81C3BCF1E195A0A00207ACE /* MomentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E81C3BCD1E195A0A00207ACE /* MomentsCell.m */; };
+		E81C3BD01E195A0A00207ACE /* MomentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E81C3BCE1E195A0A00207ACE /* MomentsCell.xib */; };
 		E81EF7511E1289BB00DD0661 /* TopSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = E81EF7501E1289BB00DD0661 /* TopSelectView.m */; };
 		E81EF7531E1289D000DD0661 /* TopSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E81EF7521E1289D000DD0661 /* TopSelectView.xib */; };
 		E81EF7561E128B1A00DD0661 /* CustomNetButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E81EF7551E128B1A00DD0661 /* CustomNetButton.m */; };
 		E81EF7591E12A85400DD0661 /* NetSchoolRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E81EF7581E12A85400DD0661 /* NetSchoolRequest.m */; };
+		E8B837651E15B339005178D5 /* CLASSB.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B837641E15B339005178D5 /* CLASSB.m */; };
 		E8B899721E082C2200ED57E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899711E082C2200ED57E3 /* main.m */; };
 		E8B899751E082C2200ED57E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899741E082C2200ED57E3 /* AppDelegate.m */; };
 		E8B8997B1E082C2200ED57E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B899791E082C2200ED57E3 /* Main.storyboard */; };
@@ -91,6 +95,11 @@
 		E81756E11E099F5000E261F4 /* OnLineoffLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnLineoffLineView.m; sourceTree = "<group>"; };
 		E81756E31E099FF400E261F4 /* OnLineCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnLineCustomButton.h; sourceTree = "<group>"; };
 		E81756E41E099FF400E261F4 /* OnLineCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnLineCustomButton.m; sourceTree = "<group>"; };
+		E81C3BC81E19549B00207ACE /* BaseScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseScrollViewController.h; sourceTree = "<group>"; };
+		E81C3BC91E19549B00207ACE /* BaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseScrollViewController.m; sourceTree = "<group>"; };
+		E81C3BCC1E195A0A00207ACE /* MomentsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomentsCell.h; sourceTree = "<group>"; };
+		E81C3BCD1E195A0A00207ACE /* MomentsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomentsCell.m; sourceTree = "<group>"; };
+		E81C3BCE1E195A0A00207ACE /* MomentsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MomentsCell.xib; sourceTree = "<group>"; };
 		E81EF74F1E1289BB00DD0661 /* TopSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopSelectView.h; sourceTree = "<group>"; };
 		E81EF7501E1289BB00DD0661 /* TopSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopSelectView.m; sourceTree = "<group>"; };
 		E81EF7521E1289D000DD0661 /* TopSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopSelectView.xib; sourceTree = "<group>"; };
@@ -98,6 +107,8 @@
 		E81EF7551E128B1A00DD0661 /* CustomNetButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNetButton.m; sourceTree = "<group>"; };
 		E81EF7571E12A85400DD0661 /* NetSchoolRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetSchoolRequest.h; sourceTree = "<group>"; };
 		E81EF7581E12A85400DD0661 /* NetSchoolRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetSchoolRequest.m; sourceTree = "<group>"; };
+		E8B837631E15B339005178D5 /* CLASSB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLASSB.h; sourceTree = "<group>"; };
+		E8B837641E15B339005178D5 /* CLASSB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLASSB.m; sourceTree = "<group>"; };
 		E8B8996D1E082C2200ED57E3 /* JK_WXForum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JK_WXForum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B899711E082C2200ED57E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8B899731E082C2200ED57E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -220,6 +231,16 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		E81C3BCB1E19599800207ACE /* IssueView */ = {
+			isa = PBXGroup;
+			children = (
+				E81C3BCC1E195A0A00207ACE /* MomentsCell.h */,
+				E81C3BCD1E195A0A00207ACE /* MomentsCell.m */,
+				E81C3BCE1E195A0A00207ACE /* MomentsCell.xib */,
+			);
+			name = IssueView;
+			sourceTree = "<group>";
+		};
 		E81EF74E1E12898300DD0661 /* NetSchoolView */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +249,8 @@
 				E81EF7521E1289D000DD0661 /* TopSelectView.xib */,
 				E81EF7541E128B1A00DD0661 /* CustomNetButton.h */,
 				E81EF7551E128B1A00DD0661 /* CustomNetButton.m */,
+				E8B837631E15B339005178D5 /* CLASSB.h */,
+				E8B837641E15B339005178D5 /* CLASSB.m */,
 			);
 			name = NetSchoolView;
 			sourceTree = "<group>";
@@ -367,8 +390,9 @@
 		E8B899A91E082FB200ED57E3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E81EF74E1E12898300DD0661 /* NetSchoolView */,
+				E81C3BCB1E19599800207ACE /* IssueView */,
 				E814AF081E0BE3C700E39746 /* BaseView */,
+				E81EF74E1E12898300DD0661 /* NetSchoolView */,
 				E81756D01E0929D200E261F4 /* WXForumView */,
 			);
 			path = Views;
@@ -383,6 +407,8 @@
 				E8B899CB1E08620E00ED57E3 /* JKNavgationController.m */,
 				E8B899D01E086B3800ED57E3 /* BaseViewController.h */,
 				E8B899D11E086B3800ED57E3 /* BaseViewController.m */,
+				E81C3BC81E19549B00207ACE /* BaseScrollViewController.h */,
+				E81C3BC91E19549B00207ACE /* BaseScrollViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -542,6 +568,7 @@
 				E814AF0D1E0BED5900E39746 /* MaxCycleView.xib in Resources */,
 				E8B899801E082C2200ED57E3 /* LaunchScreen.storyboard in Resources */,
 				E81EF7531E1289D000DD0661 /* TopSelectView.xib in Resources */,
+				E81C3BD01E195A0A00207ACE /* MomentsCell.xib in Resources */,
 				E81756D51E09361500E261F4 /* JKGeneralCell.xib in Resources */,
 				E814AF121E0BEEC200E39746 /* CycleViewCell.xib in Resources */,
 				E8B8997D1E082C2200ED57E3 /* Assets.xcassets in Resources */,
@@ -636,7 +663,10 @@
 				E8B899D21E086B3800ED57E3 /* BaseViewController.m in Sources */,
 				E816BFA01E10FEA500B818EB /* JKNetSchoolViewController.m in Sources */,
 				E81EF7511E1289BB00DD0661 /* TopSelectView.m in Sources */,
+				E81C3BCF1E195A0A00207ACE /* MomentsCell.m in Sources */,
+				E81C3BCA1E19549B00207ACE /* BaseScrollViewController.m in Sources */,
 				E81756E21E099F5000E261F4 /* OnLineoffLineView.m in Sources */,
+				E8B837651E15B339005178D5 /* CLASSB.m in Sources */,
 				E81EF7591E12A85400DD0661 /* NetSchoolRequest.m in Sources */,
 				E8B899C91E08516D00ED57E3 /* UIImage+Render.m in Sources */,
 				E81756DF1E09404600E261F4 /* GeneralRequestVM.m in Sources */,

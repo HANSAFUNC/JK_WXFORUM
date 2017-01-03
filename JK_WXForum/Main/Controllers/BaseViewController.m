@@ -30,7 +30,7 @@ static NSString * const generalCellID = @"kGeneralID";
 - (void)setupStatuBar {
     UIView * view =[[UIView alloc]init];
     view.backgroundColor = JKColor_RGB(41, 190, 156);
-    view.frame = CGRectMake(0, 0, JKSreenW, 20);
+    view.frame = CGRectMake(0, 0, JKScreenW, 20);
     [self.view insertSubview:view atIndex:1];
 }
 - (void)setupTableView{

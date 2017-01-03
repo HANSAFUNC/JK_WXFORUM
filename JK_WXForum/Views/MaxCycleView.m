@@ -41,7 +41,7 @@ static NSString * const CycleViewCellID = @"CycleViewCell";
     _timer = nil;
 }
 - (void)scrollToNextImage {
-    CGFloat offsetX = _collectionView.contentOffset.x + JKSreenW;
+    CGFloat offsetX = _collectionView.contentOffset.x + JKScreenW;
     [_collectionView setContentOffset:CGPointMake(offsetX, 0) animated:YES];
 }
 

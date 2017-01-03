@@ -18,37 +18,39 @@
 
 @implementation NetWorkSingleton
 
-//implementationSingleton(NetWorkSingleton)
+implementationSingleton(NetWorkSingleton)
 
 
-//+ (NetWorkSingleton *)sharedManager {
-//    
-//    static NetWorkSingleton * instance = nil;
-//    
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        
-//        instance = [[self alloc]init];
-//    });
-//    
-//    
-//    return instance;
-//}
-
-
-+ (NetWorkSingleton *)extensionContentTypeManager {
++ (NetWorkSingleton *)sharedManager {
     
-    NetWorkSingleton * manager = [NetWorkSingleton manager];
+    static NetWorkSingleton * instance = nil;
     
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json", nil];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        
+        instance = [[self alloc]init];
+        instance.requestSerializer.timeoutInterval = 5;
+        instance.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json", nil];
+    });
     
-    return manager;
     
+    return instance;
 }
+
+///+ (NetWorkSingleton *)extensionContentTypeManager {
+//
+//    NetWorkSingleton * manager = [NetWorkSingleton shareNetWorkSingleton];
+//    
+//    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json", nil];
+//    manager.requestSerializer.timeoutInterval = 5;
+//    
+//    return manager;
+//    
+//}
 
 + (void)requestData:(RequestType)type requestUrl:(NSString *)requestUrl parameters:(NSDictionary *)parameters  finlishCallBack:(void(^)(id responseObject,NSError *  error))finlishCallBack {
     
-    NetWorkSingleton * manager = [NetWorkSingleton extensionContentTypeManager];
+    NetWorkSingleton * manager = [self sharedManager];
     
     if (type == GET) {
         
@@ -94,15 +96,6 @@
     
     
 }
-
-
-
-
-
-
-
-
-
 
 
 

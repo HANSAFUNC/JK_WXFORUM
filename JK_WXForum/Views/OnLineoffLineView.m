@@ -17,8 +17,8 @@ const static CGFloat kOnlineViewHeight = 60;
     int totalCols = 2;
     for (int i = 0; i < 2; i++) {
         NSUInteger cols = i % totalCols;
-        CGFloat w =  JKSreenW / 2;
-        CGFloat x = cols * JKSreenW / 2;
+        CGFloat w =  JKScreenW / 2;
+        CGFloat x = cols * JKScreenW / 2;
         OnLineCustomButton * btn = [OnLineCustomButton buttonWithType:UIButtonTypeCustom];
         if (i == 0) {
             [btn setTitle:@"线上活动" forState:0];
@@ -35,7 +35,7 @@ const static CGFloat kOnlineViewHeight = 60;
         [self addSubview:btn];
     }
     UIView * midLine = [[UIView alloc]init];
-    midLine.frame = CGRectMake(JKSreenW / 2 - 0.5, 20, 1, 40);
+    midLine.frame = CGRectMake(JKScreenW / 2 - 0.5, 20, 1, 40);
     midLine.backgroundColor = [UIColor lightGrayColor];
     [self addSubview:midLine];
     

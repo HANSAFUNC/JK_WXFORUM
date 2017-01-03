@@ -53,7 +53,7 @@ const static CGFloat kTopViewHeight = 140;
 
 - (void)setupTopSelectView {
     TopSelectView * selectView = [TopSelectView loadXib];
-    selectView.frame = CGRectMake(0, 64,JKSreenW, kTopViewHeight);
+    selectView.frame = CGRectMake(0, 64,JKScreenW, kTopViewHeight);
     selectView.backgroundColor = JKColor_RGB(240, 255, 255);
     self.tableView.contentInset = UIEdgeInsetsMake(kTopViewHeight, 0, 0, 0);
     [self.view addSubview:selectView];

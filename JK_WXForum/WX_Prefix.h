@@ -54,8 +54,8 @@
 /**
  * 屏幕尺寸
  */
-#define JKSreenH [UIScreen mainScreen].bounds.size.height
-#define JKSreenW [UIScreen mainScreen].bounds.size.width
+#define JKScreenH [UIScreen mainScreen].bounds.size.height
+#define JKScreenW [UIScreen mainScreen].bounds.size.width
 
 /**
  * 机型尺寸

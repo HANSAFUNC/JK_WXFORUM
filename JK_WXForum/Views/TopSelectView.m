@@ -9,6 +9,7 @@
 #import "TopSelectView.h"
 #import "CustomNetButton.h"
 
+
 @interface TopSelectView ()
 @property (weak, nonatomic) IBOutlet UIView *topHalfView;
 
@@ -22,6 +23,8 @@
     [self setupTopHalfViewSubView];
     [self setupBottomHalfViewSubview];
 }
+
+
 
 - (UIImage*) imageToTransparent:(UIImage*) image
 

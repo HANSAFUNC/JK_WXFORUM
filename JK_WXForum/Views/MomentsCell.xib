@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ciU-KI-k7M" customClass="MomentsCell">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="104"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pe0-IS-uKY">
+                    <rect key="frame" x="10" y="10" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="DXv-kX-KJV"/>
+                        <constraint firstAttribute="width" constant="40" id="QGn-hY-v27"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4a-Tw-8Xx">
+                    <rect key="frame" x="60" y="10" width="38" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPL-xY-F4C">
+                    <rect key="frame" x="60" y="35" width="31" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ub3-6o-TDs">
+                    <rect key="frame" x="60" y="60" width="252" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Pe0-IS-uKY" firstAttribute="leading" secondItem="ciU-KI-k7M" secondAttribute="leading" constant="10" id="EoZ-NF-rXj"/>
+                <constraint firstItem="VPL-xY-F4C" firstAttribute="bottom" secondItem="Pe0-IS-uKY" secondAttribute="bottom" id="Jzg-wb-3t9"/>
+                <constraint firstItem="Z4a-Tw-8Xx" firstAttribute="top" secondItem="Pe0-IS-uKY" secondAttribute="top" id="VA7-RO-XAO"/>
+                <constraint firstItem="ub3-6o-TDs" firstAttribute="top" secondItem="VPL-xY-F4C" secondAttribute="bottom" constant="10" id="aI6-ff-VYb"/>
+                <constraint firstItem="ub3-6o-TDs" firstAttribute="leading" secondItem="VPL-xY-F4C" secondAttribute="leading" id="c86-Sm-H1k"/>
+                <constraint firstAttribute="trailing" secondItem="ub3-6o-TDs" secondAttribute="trailing" constant="30" id="dQW-VW-DQp"/>
+                <constraint firstItem="Pe0-IS-uKY" firstAttribute="top" secondItem="ciU-KI-k7M" secondAttribute="top" constant="10" id="eht-cM-scp"/>
+                <constraint firstItem="VPL-xY-F4C" firstAttribute="leading" secondItem="Pe0-IS-uKY" secondAttribute="trailing" constant="10" id="kEL-sR-HE0"/>
+                <constraint firstItem="Z4a-Tw-8Xx" firstAttribute="leading" secondItem="Pe0-IS-uKY" secondAttribute="trailing" constant="10" id="o0l-E8-HlG"/>
+                <constraint firstItem="ub3-6o-TDs" firstAttribute="top" secondItem="VPL-xY-F4C" secondAttribute="top" id="s3g-Db-B14"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="s3g-Db-B14"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="iconView" destination="Pe0-IS-uKY" id="rSz-OV-qCD"/>
+                <outlet property="nameView" destination="Z4a-Tw-8Xx" id="3xA-xW-zEO"/>
+                <outlet property="timeView" destination="VPL-xY-F4C" id="Pq2-wz-1dL"/>
+            </connections>
+            <point key="canvasLocation" x="232" y="257"/>
+        </view>
+    </objects>
+</document>
