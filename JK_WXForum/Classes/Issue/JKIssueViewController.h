@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface JKIssueViewController : UIViewController
+#import "BaseScrollViewController.h"
+@interface JKIssueViewController : BaseScrollViewController
 
 @end

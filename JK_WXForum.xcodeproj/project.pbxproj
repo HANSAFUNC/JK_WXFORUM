@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		715D6E314C435F83D0F6A499 /* libPods-JK_WXForum.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 800C7A0137AF4CD094E4DBE3 /* libPods-JK_WXForum.a */; };
+		E80F330D1E1C10740091EE61 /* AllMontensViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E80F330C1E1C10740091EE61 /* AllMontensViewController.m */; };
 		E814AF0B1E0BE42600E39746 /* MaxCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E814AF0A1E0BE42600E39746 /* MaxCycleView.m */; };
 		E814AF0D1E0BED5900E39746 /* MaxCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E814AF0C1E0BED5900E39746 /* MaxCycleView.xib */; };
 		E814AF111E0BEEC200E39746 /* CycleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E814AF0F1E0BEEC200E39746 /* CycleViewCell.m */; };
@@ -24,11 +25,17 @@
 		E81756E51E099FF400E261F4 /* OnLineCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E81756E41E099FF400E261F4 /* OnLineCustomButton.m */; };
 		E81C3BCA1E19549B00207ACE /* BaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E81C3BC91E19549B00207ACE /* BaseScrollViewController.m */; };
 		E81C3BCF1E195A0A00207ACE /* MomentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E81C3BCD1E195A0A00207ACE /* MomentsCell.m */; };
-		E81C3BD01E195A0A00207ACE /* MomentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E81C3BCE1E195A0A00207ACE /* MomentsCell.xib */; };
 		E81EF7511E1289BB00DD0661 /* TopSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = E81EF7501E1289BB00DD0661 /* TopSelectView.m */; };
 		E81EF7531E1289D000DD0661 /* TopSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E81EF7521E1289D000DD0661 /* TopSelectView.xib */; };
 		E81EF7561E128B1A00DD0661 /* CustomNetButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E81EF7551E128B1A00DD0661 /* CustomNetButton.m */; };
 		E81EF7591E12A85400DD0661 /* NetSchoolRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E81EF7581E12A85400DD0661 /* NetSchoolRequest.m */; };
+		E82D82851E1CD03C000F7ED3 /* IssueRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E82D82841E1CD03C000F7ED3 /* IssueRequest.m */; };
+		E82D828B1E1CD54A000F7ED3 /* IssueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E82D828A1E1CD54A000F7ED3 /* IssueModel.m */; };
+		E82D82901E1CDBD7000F7ED3 /* TopHalfView.m in Sources */ = {isa = PBXBuildFile; fileRef = E82D828F1E1CDBD7000F7ED3 /* TopHalfView.m */; };
+		E82D82921E1CDBEA000F7ED3 /* TopHalfView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82D82911E1CDBEA000F7ED3 /* TopHalfView.xib */; };
+		E82D82951E1CDC0E000F7ED3 /* MidImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E82D82941E1CDC0E000F7ED3 /* MidImageView.m */; };
+		E82D82981E1CDE11000F7ED3 /* BottomLikeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E82D82971E1CDE11000F7ED3 /* BottomLikeView.m */; };
+		E82D829A1E1CDE2B000F7ED3 /* BottomLikeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82D82991E1CDE2B000F7ED3 /* BottomLikeView.xib */; };
 		E8B837651E15B339005178D5 /* CLASSB.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B837641E15B339005178D5 /* CLASSB.m */; };
 		E8B899721E082C2200ED57E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899711E082C2200ED57E3 /* main.m */; };
 		E8B899751E082C2200ED57E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899741E082C2200ED57E3 /* AppDelegate.m */; };
@@ -70,6 +77,8 @@
 		31AE2F41644ADD620B10F9E5 /* Pods-JK_WXForum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JK_WXForum.release.xcconfig"; path = "Pods/Target Support Files/Pods-JK_WXForum/Pods-JK_WXForum.release.xcconfig"; sourceTree = "<group>"; };
 		800C7A0137AF4CD094E4DBE3 /* libPods-JK_WXForum.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JK_WXForum.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		930923F64D7B410AB349226A /* Pods-JK_WXForum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JK_WXForum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JK_WXForum/Pods-JK_WXForum.debug.xcconfig"; sourceTree = "<group>"; };
+		E80F330B1E1C10740091EE61 /* AllMontensViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllMontensViewController.h; sourceTree = "<group>"; };
+		E80F330C1E1C10740091EE61 /* AllMontensViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllMontensViewController.m; sourceTree = "<group>"; };
 		E814AF091E0BE42600E39746 /* MaxCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxCycleView.h; sourceTree = "<group>"; };
 		E814AF0A1E0BE42600E39746 /* MaxCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaxCycleView.m; sourceTree = "<group>"; };
 		E814AF0C1E0BED5900E39746 /* MaxCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaxCycleView.xib; sourceTree = "<group>"; };
@@ -99,7 +108,6 @@
 		E81C3BC91E19549B00207ACE /* BaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseScrollViewController.m; sourceTree = "<group>"; };
 		E81C3BCC1E195A0A00207ACE /* MomentsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomentsCell.h; sourceTree = "<group>"; };
 		E81C3BCD1E195A0A00207ACE /* MomentsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomentsCell.m; sourceTree = "<group>"; };
-		E81C3BCE1E195A0A00207ACE /* MomentsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MomentsCell.xib; sourceTree = "<group>"; };
 		E81EF74F1E1289BB00DD0661 /* TopSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopSelectView.h; sourceTree = "<group>"; };
 		E81EF7501E1289BB00DD0661 /* TopSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopSelectView.m; sourceTree = "<group>"; };
 		E81EF7521E1289D000DD0661 /* TopSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopSelectView.xib; sourceTree = "<group>"; };
@@ -107,6 +115,18 @@
 		E81EF7551E128B1A00DD0661 /* CustomNetButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNetButton.m; sourceTree = "<group>"; };
 		E81EF7571E12A85400DD0661 /* NetSchoolRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetSchoolRequest.h; sourceTree = "<group>"; };
 		E81EF7581E12A85400DD0661 /* NetSchoolRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetSchoolRequest.m; sourceTree = "<group>"; };
+		E82D82831E1CD03C000F7ED3 /* IssueRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueRequest.h; sourceTree = "<group>"; };
+		E82D82841E1CD03C000F7ED3 /* IssueRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueRequest.m; sourceTree = "<group>"; };
+		E82D82891E1CD54A000F7ED3 /* IssueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueModel.h; sourceTree = "<group>"; };
+		E82D828A1E1CD54A000F7ED3 /* IssueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueModel.m; sourceTree = "<group>"; };
+		E82D828E1E1CDBD7000F7ED3 /* TopHalfView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopHalfView.h; sourceTree = "<group>"; };
+		E82D828F1E1CDBD7000F7ED3 /* TopHalfView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopHalfView.m; sourceTree = "<group>"; };
+		E82D82911E1CDBEA000F7ED3 /* TopHalfView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopHalfView.xib; sourceTree = "<group>"; };
+		E82D82931E1CDC0E000F7ED3 /* MidImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidImageView.h; sourceTree = "<group>"; };
+		E82D82941E1CDC0E000F7ED3 /* MidImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidImageView.m; sourceTree = "<group>"; };
+		E82D82961E1CDE11000F7ED3 /* BottomLikeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomLikeView.h; sourceTree = "<group>"; };
+		E82D82971E1CDE11000F7ED3 /* BottomLikeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomLikeView.m; sourceTree = "<group>"; };
+		E82D82991E1CDE2B000F7ED3 /* BottomLikeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomLikeView.xib; sourceTree = "<group>"; };
 		E8B837631E15B339005178D5 /* CLASSB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLASSB.h; sourceTree = "<group>"; };
 		E8B837641E15B339005178D5 /* CLASSB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLASSB.m; sourceTree = "<group>"; };
 		E8B8996D1E082C2200ED57E3 /* JK_WXForum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JK_WXForum.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +246,8 @@
 				E81756DE1E09404600E261F4 /* GeneralRequestVM.m */,
 				E81EF7571E12A85400DD0661 /* NetSchoolRequest.h */,
 				E81EF7581E12A85400DD0661 /* NetSchoolRequest.m */,
+				E82D82831E1CD03C000F7ED3 /* IssueRequest.h */,
+				E82D82841E1CD03C000F7ED3 /* IssueRequest.m */,
 			);
 			name = ViewRequest;
 			path = ViewModels;
@@ -236,7 +258,14 @@
 			children = (
 				E81C3BCC1E195A0A00207ACE /* MomentsCell.h */,
 				E81C3BCD1E195A0A00207ACE /* MomentsCell.m */,
-				E81C3BCE1E195A0A00207ACE /* MomentsCell.xib */,
+				E82D828E1E1CDBD7000F7ED3 /* TopHalfView.h */,
+				E82D828F1E1CDBD7000F7ED3 /* TopHalfView.m */,
+				E82D82911E1CDBEA000F7ED3 /* TopHalfView.xib */,
+				E82D82931E1CDC0E000F7ED3 /* MidImageView.h */,
+				E82D82941E1CDC0E000F7ED3 /* MidImageView.m */,
+				E82D82961E1CDE11000F7ED3 /* BottomLikeView.h */,
+				E82D82971E1CDE11000F7ED3 /* BottomLikeView.m */,
+				E82D82991E1CDE2B000F7ED3 /* BottomLikeView.xib */,
 			);
 			name = IssueView;
 			sourceTree = "<group>";
@@ -373,6 +402,8 @@
 				E81756D71E093A4000E261F4 /* GeneralModel.m */,
 				E814AF131E0BF0BE00E39746 /* maxCycleModel.h */,
 				E814AF141E0BF0BE00E39746 /* maxCycleModel.m */,
+				E82D82891E1CD54A000F7ED3 /* IssueModel.h */,
+				E82D828A1E1CD54A000F7ED3 /* IssueModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -427,6 +458,8 @@
 			children = (
 				E8B899B31E0834E100ED57E3 /* JKIssueViewController.h */,
 				E8B899B41E0834E100ED57E3 /* JKIssueViewController.m */,
+				E80F330B1E1C10740091EE61 /* AllMontensViewController.h */,
+				E80F330C1E1C10740091EE61 /* AllMontensViewController.m */,
 			);
 			path = Issue;
 			sourceTree = "<group>";
@@ -565,11 +598,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E82D82921E1CDBEA000F7ED3 /* TopHalfView.xib in Resources */,
 				E814AF0D1E0BED5900E39746 /* MaxCycleView.xib in Resources */,
 				E8B899801E082C2200ED57E3 /* LaunchScreen.storyboard in Resources */,
 				E81EF7531E1289D000DD0661 /* TopSelectView.xib in Resources */,
-				E81C3BD01E195A0A00207ACE /* MomentsCell.xib in Resources */,
 				E81756D51E09361500E261F4 /* JKGeneralCell.xib in Resources */,
+				E82D829A1E1CDE2B000F7ED3 /* BottomLikeView.xib in Resources */,
 				E814AF121E0BEEC200E39746 /* CycleViewCell.xib in Resources */,
 				E8B8997D1E082C2200ED57E3 /* Assets.xcassets in Resources */,
 				E8B8997B1E082C2200ED57E3 /* Main.storyboard in Resources */,
@@ -646,18 +680,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				E814AF151E0BF0BE00E39746 /* maxCycleModel.m in Sources */,
+				E82D828B1E1CD54A000F7ED3 /* IssueModel.m in Sources */,
 				E81EF7561E128B1A00DD0661 /* CustomNetButton.m in Sources */,
 				E8B899CF1E08682900ED57E3 /* UIButton+buttonItem.m in Sources */,
 				E8B899751E082C2200ED57E3 /* AppDelegate.m in Sources */,
 				E8B899BB1E08354E00ED57E3 /* JKProfileViewController.m in Sources */,
+				E82D82981E1CDE11000F7ED3 /* BottomLikeView.m in Sources */,
 				E814AF111E0BEEC200E39746 /* CycleViewCell.m in Sources */,
 				E8B899BE1E08357000ED57E3 /* JKWXForumViewController.m in Sources */,
 				E81756DB1E093B3A00E261F4 /* NetWorkSingleton.m in Sources */,
 				E8B899C61E08495500ED57E3 /* UIView+Frame.m in Sources */,
 				E8B899CC1E08620E00ED57E3 /* JKNavgationController.m in Sources */,
+				E82D82951E1CDC0E000F7ED3 /* MidImageView.m in Sources */,
 				E8B899C11E08365500ED57E3 /* MainViewController.m in Sources */,
 				E8B899B21E0834A400ED57E3 /* JKForumViewController.m in Sources */,
 				E81756D81E093A4000E261F4 /* GeneralModel.m in Sources */,
+				E80F330D1E1C10740091EE61 /* AllMontensViewController.m in Sources */,
+				E82D82901E1CDBD7000F7ED3 /* TopHalfView.m in Sources */,
 				E8B899721E082C2200ED57E3 /* main.m in Sources */,
 				E814AF0B1E0BE42600E39746 /* MaxCycleView.m in Sources */,
 				E8B899D21E086B3800ED57E3 /* BaseViewController.m in Sources */,
@@ -666,6 +705,7 @@
 				E81C3BCF1E195A0A00207ACE /* MomentsCell.m in Sources */,
 				E81C3BCA1E19549B00207ACE /* BaseScrollViewController.m in Sources */,
 				E81756E21E099F5000E261F4 /* OnLineoffLineView.m in Sources */,
+				E82D82851E1CD03C000F7ED3 /* IssueRequest.m in Sources */,
 				E8B837651E15B339005178D5 /* CLASSB.m in Sources */,
 				E81EF7591E12A85400DD0661 /* NetSchoolRequest.m in Sources */,
 				E8B899C91E08516D00ED57E3 /* UIImage+Render.m in Sources */,

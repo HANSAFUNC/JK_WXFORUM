@@ -7,6 +7,7 @@
 //
 
 #import "JKIssueViewController.h"
+#import "AllMontensViewController.h"
 
 @interface JKIssueViewController ()
 
@@ -22,7 +23,28 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self onceParameterConfig:^(CGFloat *fontSize, CGFloat *underLineHeight, CGFloat *number, BOOL *isSearchView) {
+        *number = 2;
+        *isSearchView = NO;
     
+    } setupAllController:^{
+        AllMontensViewController * vc = [AllMontensViewController new];
+        UIViewController * vc1 = [UIViewController new];
+        vc.title = @"全部";
+        vc1.title = @"热门";
+        [self addChildViewController:vc];
+        [self addChildViewController:vc1];
+        
+    }];
+    [self setupStatuBar];
+    
+}
+
+- (void)setupStatuBar {
+    UIView * view =[[UIView alloc]init];
+    view.backgroundColor = JKColor_RGB(41, 190, 156);
+    view.frame = CGRectMake(0, 0, JKScreenW, 20);
+    [self.view insertSubview:view atIndex:1];
 }
 
 - (void)didReceiveMemoryWarning {

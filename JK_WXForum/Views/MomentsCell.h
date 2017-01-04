@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class IssueModel;
 @interface MomentsCell : UITableViewCell
+@property (nonatomic ,strong) IssueModel * issueItem;
 
 @end

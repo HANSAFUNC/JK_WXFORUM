@@ -24,7 +24,6 @@ static NSString *const CollectionID = @"COLLECTION";
 @property (nonatomic ,strong) UIView * underLine;
 //保存按钮的数组
 @property (nonatomic ,strong) NSMutableArray * buttons;
-
 //字体大小
 @property (nonatomic ,assign) CGFloat fontSize;
 //下标高度
@@ -50,7 +49,7 @@ static NSString *const CollectionID = @"COLLECTION";
 {
     if (_underLine == nil) {
         _underLine = [[UIView alloc]init];
-        _underLine.backgroundColor = [UIColor redColor];
+        _underLine.backgroundColor = JKColor_RGB(41, 190, 156);
         [self.topTitleView addSubview:_underLine];
     }
     return _underLine;
@@ -101,7 +100,8 @@ static NSString *const CollectionID = @"COLLECTION";
     [self setupAllTitleButton:15 underLineHeight:2];
     
     self.title = @"测试";
-    self.automaticallyAdjustsScrollViewInsets =NO;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
 }
 
 
@@ -122,7 +122,7 @@ static NSString *const CollectionID = @"COLLECTION";
         UIViewController *vc = self.childViewControllers[i];
         [btn setTitle:vc.title forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [btn setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
+        [btn setTitleColor:JKColor_RGB(41, 190, 156) forState:UIControlStateSelected];
         [btn addTarget:self action:@selector(DidClickControllerTransition:) forControlEvents:UIControlEventTouchUpInside];
         [_topTitleView addSubview:btn];
         [self.buttons addObject:btn];
@@ -135,7 +135,7 @@ static NSString *const CollectionID = @"COLLECTION";
             CGFloat h = self.underLineH==0?underLineHeight:self.underLineH;
             self.underLine.jk_height =h;
             self.underLine.jk_y =_topTitleView.jk_height -h;
-            self.underLine.jk_width = btn.titleLabel.jk_width;
+            self.underLine.jk_width = btn.jk_width;
             self.underLine.centerX = btn.centerX;
             
         }
@@ -161,11 +161,10 @@ static NSString *const CollectionID = @"COLLECTION";
     UIScrollView *topTtitleVie = [[UIScrollView alloc]init];
     CGFloat y =_isSearchView?CGRectGetMaxY(_searchBar.frame):CGRectGetMaxY(self.navigationController.navigationBar.frame);
     topTtitleVie.frame =CGRectMake(0, y, JKScreenW, 44);
-    topTtitleVie.backgroundColor = [UIColor colorWithWhite:1 alpha:0.6];
+    topTtitleVie.backgroundColor = JKColor_RGB(240, 255, 255);;
     topTtitleVie.contentSize =CGSizeMake(self.childViewControllers.count *_MYwidth, topTtitleVie.jk_height);
     topTtitleVie.pagingEnabled =YES;
     topTtitleVie.showsHorizontalScrollIndicator =NO;
-    
     _topTitleView = topTtitleVie;
     [self.view addSubview:topTtitleVie];
     
@@ -180,7 +179,7 @@ static NSString *const CollectionID = @"COLLECTION";
     _Collection.contentOffset =CGPointMake(btn.tag * JKScreenW, 0);
     [UIView animateWithDuration:0.5 animations:^{
         
-        self.underLine.jk_width = btn.titleLabel.jk_width;
+        self.underLine.jk_width = btn.jk_width;
         self.underLine.centerX =btn.centerX;
         
     }];
@@ -214,7 +213,6 @@ static NSString *const CollectionID = @"COLLECTION";
     
 }
 
-
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     //    [self scrollViewDidEndScrollingAnimation:scrollView];
@@ -224,8 +222,6 @@ static NSString *const CollectionID = @"COLLECTION";
     
     [self DidClickControllerTransition:button];
 }
-
-
 
 //添加所有控制器
 - (void)setupAllChildController:(void(^)())setupAllChildController
@@ -241,16 +237,16 @@ static NSString *const CollectionID = @"COLLECTION";
     layout.minimumLineSpacing = 0;
     layout.minimumInteritemSpacing = 0;
     layout.scrollDirection =UICollectionViewScrollDirectionHorizontal;
-    layout.itemSize = CGSizeMake(JKScreenW, JKScreenH);
+    layout.itemSize = CGSizeMake(WIDTH(self.view), HEIGHT(self.view));
     
     
     
     UICollectionView * Collection = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:layout];
-    Collection.backgroundColor = [UIColor whiteColor];
+    Collection.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     Collection.pagingEnabled =YES;
     Collection.delegate = self;
     Collection.dataSource = self;
-    Collection.bounces =NO;
+    Collection.bounces = NO;
     _Collection =Collection;
     [Collection registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:CollectionID];
     [self.view addSubview:Collection];
