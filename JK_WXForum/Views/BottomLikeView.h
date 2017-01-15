@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class IssueModel;
 @interface BottomLikeView : UIView
-
+@property (nonatomic ,strong) IssueModel * issueItem;
 + (instancetype)viewForXib;
 @end

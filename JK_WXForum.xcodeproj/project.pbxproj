@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		715D6E314C435F83D0F6A499 /* libPods-JK_WXForum.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 800C7A0137AF4CD094E4DBE3 /* libPods-JK_WXForum.a */; };
+		E80DF7E11E1E504A00D22902 /* BaseForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E80DF7E01E1E504A00D22902 /* BaseForumViewController.m */; };
+		E80DF7E61E1E51C200D22902 /* ForumSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E80DF7E41E1E51C200D22902 /* ForumSubCell.m */; };
+		E80DF7E71E1E51C200D22902 /* ForumSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E80DF7E51E1E51C200D22902 /* ForumSubCell.xib */; };
 		E80F330D1E1C10740091EE61 /* AllMontensViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E80F330C1E1C10740091EE61 /* AllMontensViewController.m */; };
 		E814AF0B1E0BE42600E39746 /* MaxCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E814AF0A1E0BE42600E39746 /* MaxCycleView.m */; };
 		E814AF0D1E0BED5900E39746 /* MaxCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E814AF0C1E0BED5900E39746 /* MaxCycleView.xib */; };
@@ -23,6 +26,12 @@
 		E81756DF1E09404600E261F4 /* GeneralRequestVM.m in Sources */ = {isa = PBXBuildFile; fileRef = E81756DE1E09404600E261F4 /* GeneralRequestVM.m */; };
 		E81756E21E099F5000E261F4 /* OnLineoffLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E81756E11E099F5000E261F4 /* OnLineoffLineView.m */; };
 		E81756E51E099FF400E261F4 /* OnLineCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E81756E41E099FF400E261F4 /* OnLineCustomButton.m */; };
+		E81B14451E26837E00C4875E /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E81B14441E26837E00C4875E /* BaseWebViewController.m */; };
+		E81B14481E268FC000C4875E /* WebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E81B14471E268FC000C4875E /* WebRequest.m */; };
+		E81B144B1E268FD000C4875E /* webModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E81B144A1E268FD000C4875E /* webModel.m */; };
+		E81B144E1E26994200C4875E /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E81B144D1E26994200C4875E /* UIImage+Color.m */; };
+		E81B14581E26CE6600C4875E /* index.css in Resources */ = {isa = PBXBuildFile; fileRef = E81B14561E26CE6600C4875E /* index.css */; };
+		E81B14591E26CE6600C4875E /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = E81B14571E26CE6600C4875E /* index.js */; };
 		E81C3BCA1E19549B00207ACE /* BaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E81C3BC91E19549B00207ACE /* BaseScrollViewController.m */; };
 		E81C3BCF1E195A0A00207ACE /* MomentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E81C3BCD1E195A0A00207ACE /* MomentsCell.m */; };
 		E81EF7511E1289BB00DD0661 /* TopSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = E81EF7501E1289BB00DD0661 /* TopSelectView.m */; };
@@ -36,6 +45,10 @@
 		E82D82951E1CDC0E000F7ED3 /* MidImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E82D82941E1CDC0E000F7ED3 /* MidImageView.m */; };
 		E82D82981E1CDE11000F7ED3 /* BottomLikeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E82D82971E1CDE11000F7ED3 /* BottomLikeView.m */; };
 		E82D829A1E1CDE2B000F7ED3 /* BottomLikeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82D82991E1CDE2B000F7ED3 /* BottomLikeView.xib */; };
+		E82D829D1E1D44DC000F7ED3 /* BaseMomentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82D829C1E1D44DC000F7ED3 /* BaseMomentViewController.m */; };
+		E82D82A01E1D4777000F7ED3 /* HotMontentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82D829F1E1D4777000F7ED3 /* HotMontentViewController.m */; };
+		E86DC0201E2778F500C33DC1 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86DC01F1E2778F500C33DC1 /* JavaScriptCore.framework */; };
+		E86DC0231E2780D700C33DC1 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = E86DC0221E2780D700C33DC1 /* index.html */; };
 		E8B837651E15B339005178D5 /* CLASSB.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B837641E15B339005178D5 /* CLASSB.m */; };
 		E8B899721E082C2200ED57E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899711E082C2200ED57E3 /* main.m */; };
 		E8B899751E082C2200ED57E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B899741E082C2200ED57E3 /* AppDelegate.m */; };
@@ -77,6 +90,11 @@
 		31AE2F41644ADD620B10F9E5 /* Pods-JK_WXForum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JK_WXForum.release.xcconfig"; path = "Pods/Target Support Files/Pods-JK_WXForum/Pods-JK_WXForum.release.xcconfig"; sourceTree = "<group>"; };
 		800C7A0137AF4CD094E4DBE3 /* libPods-JK_WXForum.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JK_WXForum.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		930923F64D7B410AB349226A /* Pods-JK_WXForum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JK_WXForum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JK_WXForum/Pods-JK_WXForum.debug.xcconfig"; sourceTree = "<group>"; };
+		E80DF7DF1E1E504A00D22902 /* BaseForumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseForumViewController.h; sourceTree = "<group>"; };
+		E80DF7E01E1E504A00D22902 /* BaseForumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseForumViewController.m; sourceTree = "<group>"; };
+		E80DF7E31E1E51C200D22902 /* ForumSubCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumSubCell.h; sourceTree = "<group>"; };
+		E80DF7E41E1E51C200D22902 /* ForumSubCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumSubCell.m; sourceTree = "<group>"; };
+		E80DF7E51E1E51C200D22902 /* ForumSubCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForumSubCell.xib; sourceTree = "<group>"; };
 		E80F330B1E1C10740091EE61 /* AllMontensViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllMontensViewController.h; sourceTree = "<group>"; };
 		E80F330C1E1C10740091EE61 /* AllMontensViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllMontensViewController.m; sourceTree = "<group>"; };
 		E814AF091E0BE42600E39746 /* MaxCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxCycleView.h; sourceTree = "<group>"; };
@@ -104,6 +122,16 @@
 		E81756E11E099F5000E261F4 /* OnLineoffLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnLineoffLineView.m; sourceTree = "<group>"; };
 		E81756E31E099FF400E261F4 /* OnLineCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnLineCustomButton.h; sourceTree = "<group>"; };
 		E81756E41E099FF400E261F4 /* OnLineCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnLineCustomButton.m; sourceTree = "<group>"; };
+		E81B14431E26837E00C4875E /* BaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
+		E81B14441E26837E00C4875E /* BaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
+		E81B14461E268FC000C4875E /* WebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequest.h; sourceTree = "<group>"; };
+		E81B14471E268FC000C4875E /* WebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebRequest.m; sourceTree = "<group>"; };
+		E81B14491E268FD000C4875E /* webModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webModel.h; sourceTree = "<group>"; };
+		E81B144A1E268FD000C4875E /* webModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webModel.m; sourceTree = "<group>"; };
+		E81B144C1E26994200C4875E /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		E81B144D1E26994200C4875E /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		E81B14561E26CE6600C4875E /* index.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = index.css; sourceTree = "<group>"; };
+		E81B14571E26CE6600C4875E /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
 		E81C3BC81E19549B00207ACE /* BaseScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseScrollViewController.h; sourceTree = "<group>"; };
 		E81C3BC91E19549B00207ACE /* BaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseScrollViewController.m; sourceTree = "<group>"; };
 		E81C3BCC1E195A0A00207ACE /* MomentsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomentsCell.h; sourceTree = "<group>"; };
@@ -127,6 +155,12 @@
 		E82D82961E1CDE11000F7ED3 /* BottomLikeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomLikeView.h; sourceTree = "<group>"; };
 		E82D82971E1CDE11000F7ED3 /* BottomLikeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomLikeView.m; sourceTree = "<group>"; };
 		E82D82991E1CDE2B000F7ED3 /* BottomLikeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomLikeView.xib; sourceTree = "<group>"; };
+		E82D829B1E1D44DC000F7ED3 /* BaseMomentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMomentViewController.h; sourceTree = "<group>"; };
+		E82D829C1E1D44DC000F7ED3 /* BaseMomentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMomentViewController.m; sourceTree = "<group>"; };
+		E82D829E1E1D4777000F7ED3 /* HotMontentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotMontentViewController.h; sourceTree = "<group>"; };
+		E82D829F1E1D4777000F7ED3 /* HotMontentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotMontentViewController.m; sourceTree = "<group>"; };
+		E86DC01F1E2778F500C33DC1 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		E86DC0221E2780D700C33DC1 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		E8B837631E15B339005178D5 /* CLASSB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLASSB.h; sourceTree = "<group>"; };
 		E8B837641E15B339005178D5 /* CLASSB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLASSB.m; sourceTree = "<group>"; };
 		E8B8996D1E082C2200ED57E3 /* JK_WXForum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JK_WXForum.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +206,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86DC0201E2778F500C33DC1 /* JavaScriptCore.framework in Frameworks */,
 				715D6E314C435F83D0F6A499 /* libPods-JK_WXForum.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,9 +240,20 @@
 		9433205CFB34089D6C4A4BB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E86DC01F1E2778F500C33DC1 /* JavaScriptCore.framework */,
 				800C7A0137AF4CD094E4DBE3 /* libPods-JK_WXForum.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E80DF7E21E1E510B00D22902 /* Forum */ = {
+			isa = PBXGroup;
+			children = (
+				E80DF7E31E1E51C200D22902 /* ForumSubCell.h */,
+				E80DF7E41E1E51C200D22902 /* ForumSubCell.m */,
+				E80DF7E51E1E51C200D22902 /* ForumSubCell.xib */,
+			);
+			name = Forum;
 			sourceTree = "<group>";
 		};
 		E814AF081E0BE3C700E39746 /* BaseView */ = {
@@ -248,9 +294,21 @@
 				E81EF7581E12A85400DD0661 /* NetSchoolRequest.m */,
 				E82D82831E1CD03C000F7ED3 /* IssueRequest.h */,
 				E82D82841E1CD03C000F7ED3 /* IssueRequest.m */,
+				E81B14461E268FC000C4875E /* WebRequest.h */,
+				E81B14471E268FC000C4875E /* WebRequest.m */,
 			);
 			name = ViewRequest;
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E81B144F1E26BE7C00C4875E /* WebJavaScript */ = {
+			isa = PBXGroup;
+			children = (
+				E81B14561E26CE6600C4875E /* index.css */,
+				E81B14571E26CE6600C4875E /* index.js */,
+				E86DC0221E2780D700C33DC1 /* index.html */,
+			);
+			path = WebJavaScript;
 			sourceTree = "<group>";
 		};
 		E81C3BCB1E19599800207ACE /* IssueView */ = {
@@ -309,6 +367,7 @@
 		E8B8996F1E082C2200ED57E3 /* JK_WXForum */ = {
 			isa = PBXGroup;
 			children = (
+				E81B144F1E26BE7C00C4875E /* WebJavaScript */,
 				E8B899A61E082F7D00ED57E3 /* Main */,
 				E8B899A71E082F7D00ED57E3 /* Models */,
 				E8B899A91E082FB200ED57E3 /* Views */,
@@ -382,6 +441,8 @@
 				E8B899C81E08516D00ED57E3 /* UIImage+Render.m */,
 				E8B899CD1E08682900ED57E3 /* UIButton+buttonItem.h */,
 				E8B899CE1E08682900ED57E3 /* UIButton+buttonItem.m */,
+				E81B144C1E26994200C4875E /* UIImage+Color.h */,
+				E81B144D1E26994200C4875E /* UIImage+Color.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -404,6 +465,8 @@
 				E814AF141E0BF0BE00E39746 /* maxCycleModel.m */,
 				E82D82891E1CD54A000F7ED3 /* IssueModel.h */,
 				E82D828A1E1CD54A000F7ED3 /* IssueModel.m */,
+				E81B14491E268FD000C4875E /* webModel.h */,
+				E81B144A1E268FD000C4875E /* webModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -421,6 +484,7 @@
 		E8B899A91E082FB200ED57E3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E80DF7E21E1E510B00D22902 /* Forum */,
 				E81C3BCB1E19599800207ACE /* IssueView */,
 				E814AF081E0BE3C700E39746 /* BaseView */,
 				E81EF74E1E12898300DD0661 /* NetSchoolView */,
@@ -440,6 +504,12 @@
 				E8B899D11E086B3800ED57E3 /* BaseViewController.m */,
 				E81C3BC81E19549B00207ACE /* BaseScrollViewController.h */,
 				E81C3BC91E19549B00207ACE /* BaseScrollViewController.m */,
+				E82D829B1E1D44DC000F7ED3 /* BaseMomentViewController.h */,
+				E82D829C1E1D44DC000F7ED3 /* BaseMomentViewController.m */,
+				E80DF7DF1E1E504A00D22902 /* BaseForumViewController.h */,
+				E80DF7E01E1E504A00D22902 /* BaseForumViewController.m */,
+				E81B14431E26837E00C4875E /* BaseWebViewController.h */,
+				E81B14441E26837E00C4875E /* BaseWebViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -460,6 +530,8 @@
 				E8B899B41E0834E100ED57E3 /* JKIssueViewController.m */,
 				E80F330B1E1C10740091EE61 /* AllMontensViewController.h */,
 				E80F330C1E1C10740091EE61 /* AllMontensViewController.m */,
+				E82D829E1E1D4777000F7ED3 /* HotMontentViewController.h */,
+				E82D829F1E1D4777000F7ED3 /* HotMontentViewController.m */,
 			);
 			path = Issue;
 			sourceTree = "<group>";
@@ -600,8 +672,12 @@
 			files = (
 				E82D82921E1CDBEA000F7ED3 /* TopHalfView.xib in Resources */,
 				E814AF0D1E0BED5900E39746 /* MaxCycleView.xib in Resources */,
+				E81B14581E26CE6600C4875E /* index.css in Resources */,
+				E86DC0231E2780D700C33DC1 /* index.html in Resources */,
+				E81B14591E26CE6600C4875E /* index.js in Resources */,
 				E8B899801E082C2200ED57E3 /* LaunchScreen.storyboard in Resources */,
 				E81EF7531E1289D000DD0661 /* TopSelectView.xib in Resources */,
+				E80DF7E71E1E51C200D22902 /* ForumSubCell.xib in Resources */,
 				E81756D51E09361500E261F4 /* JKGeneralCell.xib in Resources */,
 				E82D829A1E1CDE2B000F7ED3 /* BottomLikeView.xib in Resources */,
 				E814AF121E0BEEC200E39746 /* CycleViewCell.xib in Resources */,
@@ -682,22 +758,29 @@
 				E814AF151E0BF0BE00E39746 /* maxCycleModel.m in Sources */,
 				E82D828B1E1CD54A000F7ED3 /* IssueModel.m in Sources */,
 				E81EF7561E128B1A00DD0661 /* CustomNetButton.m in Sources */,
+				E80DF7E61E1E51C200D22902 /* ForumSubCell.m in Sources */,
 				E8B899CF1E08682900ED57E3 /* UIButton+buttonItem.m in Sources */,
 				E8B899751E082C2200ED57E3 /* AppDelegate.m in Sources */,
 				E8B899BB1E08354E00ED57E3 /* JKProfileViewController.m in Sources */,
 				E82D82981E1CDE11000F7ED3 /* BottomLikeView.m in Sources */,
 				E814AF111E0BEEC200E39746 /* CycleViewCell.m in Sources */,
+				E82D82A01E1D4777000F7ED3 /* HotMontentViewController.m in Sources */,
 				E8B899BE1E08357000ED57E3 /* JKWXForumViewController.m in Sources */,
 				E81756DB1E093B3A00E261F4 /* NetWorkSingleton.m in Sources */,
 				E8B899C61E08495500ED57E3 /* UIView+Frame.m in Sources */,
 				E8B899CC1E08620E00ED57E3 /* JKNavgationController.m in Sources */,
+				E81B14481E268FC000C4875E /* WebRequest.m in Sources */,
+				E80DF7E11E1E504A00D22902 /* BaseForumViewController.m in Sources */,
 				E82D82951E1CDC0E000F7ED3 /* MidImageView.m in Sources */,
 				E8B899C11E08365500ED57E3 /* MainViewController.m in Sources */,
 				E8B899B21E0834A400ED57E3 /* JKForumViewController.m in Sources */,
+				E81B14451E26837E00C4875E /* BaseWebViewController.m in Sources */,
+				E82D829D1E1D44DC000F7ED3 /* BaseMomentViewController.m in Sources */,
 				E81756D81E093A4000E261F4 /* GeneralModel.m in Sources */,
 				E80F330D1E1C10740091EE61 /* AllMontensViewController.m in Sources */,
 				E82D82901E1CDBD7000F7ED3 /* TopHalfView.m in Sources */,
 				E8B899721E082C2200ED57E3 /* main.m in Sources */,
+				E81B144E1E26994200C4875E /* UIImage+Color.m in Sources */,
 				E814AF0B1E0BE42600E39746 /* MaxCycleView.m in Sources */,
 				E8B899D21E086B3800ED57E3 /* BaseViewController.m in Sources */,
 				E816BFA01E10FEA500B818EB /* JKNetSchoolViewController.m in Sources */,
@@ -705,6 +788,7 @@
 				E81C3BCF1E195A0A00207ACE /* MomentsCell.m in Sources */,
 				E81C3BCA1E19549B00207ACE /* BaseScrollViewController.m in Sources */,
 				E81756E21E099F5000E261F4 /* OnLineoffLineView.m in Sources */,
+				E81B144B1E268FD000C4875E /* webModel.m in Sources */,
 				E82D82851E1CD03C000F7ED3 /* IssueRequest.m in Sources */,
 				E8B837651E15B339005178D5 /* CLASSB.m in Sources */,
 				E81EF7591E12A85400DD0661 /* NetSchoolRequest.m in Sources */,

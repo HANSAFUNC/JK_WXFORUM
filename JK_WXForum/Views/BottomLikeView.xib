@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BottomLikeView">
             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -19,7 +19,7 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" title="300" image="zz0">
+                    <state key="normal" image="zz0">
                         <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
@@ -30,7 +30,7 @@
                         <constraint firstAttribute="height" constant="24" id="5sw-ny-7dR"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <state key="normal" title="300" image="Comment">
+                    <state key="normal" image="Comment">
                         <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
@@ -43,6 +43,10 @@
                 <constraint firstItem="koS-jE-qE6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xRy-fE-ipj"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="commentNum" destination="koS-jE-qE6" id="96b-Fv-i7p"/>
+                <outlet property="likeButton" destination="wEM-UQ-xN5" id="fZJ-wn-C84"/>
+            </connections>
             <point key="canvasLocation" x="240.5" y="326"/>
         </view>
     </objects>

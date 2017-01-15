@@ -15,7 +15,7 @@
     int b;
 
 - (id)inital {
-    Class A = NSClassFromString(@"CLASSB") ;
+//    Class A = NSClassFromString(@"CLASSB") ;
 //    Class b = objc_allocateClassPair(A, "CLASSB", 0);
 //    objc_registerClassPair(b);
 //    size_t size = class_getInstanceSize (A);

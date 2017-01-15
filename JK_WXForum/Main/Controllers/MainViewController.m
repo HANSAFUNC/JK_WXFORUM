@@ -12,8 +12,8 @@
 #import "JKIssueViewController.h"
 #import "JKForumViewController.h"
 #import "JKProfileViewController.h"
-#import "UIImage+Render.h"
 #import "JKNavgationController.h"
+#import "UIImage+Render.h"
 
 @interface MainViewController ()
 
@@ -49,8 +49,6 @@
     [self giveController:Issue normalImage:@"cc_off" selectImage:@"cc_on" isNavigation:YES];
     [self giveController:Forum normalImage:@"bbs_off" selectImage:@"bbs_on" isNavigation:YES];
     [self giveController:Profile normalImage:@"my_off" selectImage:@"my_on" isNavigation:NO];
-    
-    
     
 }
 

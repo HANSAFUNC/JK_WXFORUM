@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface JKForumViewController : UIViewController
+#import "BaseScrollViewController.h"
+@interface JKForumViewController : BaseScrollViewController
 
 @end

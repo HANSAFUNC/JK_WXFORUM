@@ -22,8 +22,25 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupUI];
     
 }
+- (void)setupUI {
+    [self onceParameterConfig:^(CGFloat *fontSize, CGFloat *underLineHeight, CGFloat *number, BOOL *isSearchView, CGFloat *titleHeight) {
+        
+    } setupAllController:^{
+        
+    }];
+    [self setupStatuBar];
+}
+- (void)setupStatuBar {
+    UIView * view =[[UIView alloc]init];
+    view.backgroundColor = JKColor_RGB(41, 190, 156);
+    view.frame = CGRectMake(0, 0, JKScreenW, 20);
+    [self.view insertSubview:view atIndex:1];
+}
+
+
 
 
 

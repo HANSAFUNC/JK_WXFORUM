@@ -7,6 +7,7 @@
 //
 
 #import "JKWXForumViewController.h"
+#import "BaseWebViewController.h"
 #import "JKCustomButton.h"
 #import "GeneralRequestVM.h"
 #import "JKGeneralCell.h"
@@ -14,6 +15,11 @@
 #import "GeneralModel.h"
 #import "MaxCycleView.h"
 #import <MJRefresh/MJRefresh.h>
+typedef NS_ENUM(NSInteger,SelectTargetFid) {
+     //闲言碎语
+    SelectTittleTattle = 84,
+    
+};
 
 const static CGFloat kNavgationHeight = 30;
 const static CGFloat kContentViewHeight = 61;
@@ -47,6 +53,7 @@ const static CGFloat kCycleViewHeight = 140;
     [self setupMaxCycleView];
     [self setupLibMJRefresh];
     
+    
 }
 
 - (void)setupBarButtonItemView {
@@ -70,6 +77,8 @@ const static CGFloat kCycleViewHeight = 140;
         self.generalModels = self.GeneralVm.GeneralModels;
         [self.tableView reloadData];
         [self.tableView.mj_header endRefreshing];
+        NSLog(@"%@",self.GeneralVm)
+        
         
     }];
     
@@ -132,12 +141,14 @@ const static CGFloat kCycleViewHeight = 140;
         CGFloat x = col * w + col * margin;
         CGFloat y = row * ( h + margin);
         btn.frame = CGRectMake(x, y, w, h);
+        
         btn.tag = [self.GeneralVm.navigationModels[i][@"fid"] integerValue];
         [btn addTarget:self action:@selector(jumpToTopicTypeViewController:) forControlEvents:UIControlEventTouchUpInside];
         [view addSubview:btn];
         
     }
 }
+
 
 
 - (void)jumpToTopicTypeViewController:(UIButton *)selectButton {
@@ -172,11 +183,24 @@ const static CGFloat kCycleViewHeight = 140;
 }
 - (void)pushSearchViewController{
     
+
     NSLog(@"跳转查找控制器");
 }
 
 - (void)signInFadeShowSignView {
     NSLog(@"弹出签到遮盖");
+}
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    GeneralModel * model = self.generalModels[indexPath.row];
+    BaseWebViewController * webViewController = [[BaseWebViewController alloc]init];
+    webViewController.generalModel = model;
+    [self.navigationController pushViewController:webViewController animated:YES];
+    
+    
+    NSLog(@"%@ %@",model.tid,model.fid);
+    
 }
 
 -(void)dealloc {

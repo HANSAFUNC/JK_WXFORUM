@@ -30,8 +30,8 @@
         CGFloat x = cols * (w + margin);
         
         if (images.count == 1) {
-            h = (WIDTH(self)  - (3 - 1) * margin) / 3;
-            w = WIDTH(self)  - 90;
+            h = HEIGHT(self);
+            w = WIDTH(self);
         }
         image.frame = CGRectMake(x, 0, w, h);
         [self addSubview:image];

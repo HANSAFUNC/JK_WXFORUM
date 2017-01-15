@@ -13,8 +13,23 @@
 
 @implementation IssueRequest
 
--(void)loadIssueDataSourceHandleCompleteBlock:(void(^)())completeCallBack {
+-(void)loadIssueAllDataSourceHandleCompleteBlock:(void(^)())completeCallBack {
     [NetWorkSingleton requestData:GET requestUrl:@"http://api.pyua.net/?v=1&module=doing&doid=&filter=&page=1&view=all" parameters:nil finlishCallBack:^(id responseObject, NSError *error) {
+        NSArray * tempArr = responseObject[@"variables"][@"list"];
+        _issueModels  = [IssueModel mj_objectArrayWithKeyValuesArray:tempArr];
+        if (error) {
+            NSLog(@"%@",error);
+        }
+        if (completeCallBack) {
+            completeCallBack();
+        }
+        
+    }];
+    
+}
+
+-(void)loadIssueHotDataSourceHandleCompleteBlock:(void(^)())completeCallBack {
+    [NetWorkSingleton requestData:GET requestUrl:@"http://api.pyua.net/?v=1&module=doing&doid=&filter=heat&page=1&view=all" parameters:nil finlishCallBack:^(id responseObject, NSError *error) {
         NSArray * tempArr = responseObject[@"variables"][@"list"];
         _issueModels  = [IssueModel mj_objectArrayWithKeyValuesArray:tempArr];
         if (error) {

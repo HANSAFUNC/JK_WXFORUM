@@ -62,18 +62,14 @@ implementationSingleton(NetWorkSingleton)
                 finlishCallBack(responseObject,nil);
             }
             
-            
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            
             if (error) {
                 
                 finlishCallBack(nil,error);
             }
-            
         }];
         
     }
- 
     
     if (type == POST) {
         
@@ -90,11 +86,7 @@ implementationSingleton(NetWorkSingleton)
             finlishCallBack(nil,error);
             
         }];
-        
-
     }
-    
-    
 }
 
 

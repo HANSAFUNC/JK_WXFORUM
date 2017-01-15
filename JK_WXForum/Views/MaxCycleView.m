@@ -22,11 +22,15 @@ static NSString * const CycleViewCellID = @"CycleViewCell";
 
 - (void)setMaxCycleModels:(NSArray *)maxCycleModels{
     _maxCycleModels = maxCycleModels;
+    [self stopTimer];
     _pageControl.numberOfPages = maxCycleModels.count;
     [_collectionView reloadData];
-    [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:maxCycleModels.count * 100 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
-    [self stopTimer];
-    [self startTimer];
+    if (maxCycleModels) {
+        [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:maxCycleModels.count * 500 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+        [self startTimer];
+    }
+    
+    
 }
 
 

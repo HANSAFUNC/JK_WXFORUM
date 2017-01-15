@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AllMontensViewController : UITableViewController
+#import "BaseMomentViewController.h"
+@interface AllMontensViewController : BaseMomentViewController
 
 @end

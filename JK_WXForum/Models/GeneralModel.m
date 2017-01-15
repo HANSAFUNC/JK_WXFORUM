@@ -10,7 +10,6 @@
 
 @implementation GeneralModel
 
-
 -(CGFloat)cellH
 {
     if (self.attachimg.count) {

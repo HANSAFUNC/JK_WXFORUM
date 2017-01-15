@@ -29,6 +29,11 @@ const static CGFloat kTopViewHeight = 140;
     
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    NSLog(@"%@",NSStringFromCGRect(self.view.frame));
+    
+}
 - (void)setupUI {
     [super setupUI];
     [self setupLibMJRefresh];
@@ -53,13 +58,17 @@ const static CGFloat kTopViewHeight = 140;
 
 - (void)setupTopSelectView {
     TopSelectView * selectView = [TopSelectView loadXib];
-    selectView.frame = CGRectMake(0, 64,JKScreenW, kTopViewHeight);
+    selectView.frame = CGRectMake(0, 0,JKScreenW, kTopViewHeight);
     selectView.backgroundColor = JKColor_RGB(240, 255, 255);
     self.tableView.contentInset = UIEdgeInsetsMake(kTopViewHeight, 0, 0, 0);
     [self.view addSubview:selectView];
     
 }
 
+- (void)setupTableView {
+    [super setupTableView];
+    self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(kTopViewHeight, 0, 0, 0);
+}
 - (void)setupLibMJRefresh {
     MJRefreshNormalHeader * header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadAllData)];
     header.automaticallyChangeAlpha = YES;
@@ -69,7 +78,9 @@ const static CGFloat kTopViewHeight = 140;
     
 }
 
-
+/**
+ *  跳到发表吹吹Controller
+ */
 - (void)touchUpPublishArticle {
     
 }

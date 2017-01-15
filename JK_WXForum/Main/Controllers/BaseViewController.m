@@ -24,7 +24,8 @@ static NSString * const generalCellID = @"kGeneralID";
 
 - (void)setupUI {
     [self setupTableView];
-    [self setupStatuBar];
+    
+//    [self setupStatuBar];
 }
 
 - (void)setupStatuBar {

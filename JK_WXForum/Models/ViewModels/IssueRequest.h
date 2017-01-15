@@ -11,5 +11,6 @@
 @interface IssueRequest : NSObject
 @property (nonatomic ,strong) NSArray * issueModels;
 
--(void)loadIssueDataSourceHandleCompleteBlock:(void(^)())completeCallBack;
+-(void)loadIssueAllDataSourceHandleCompleteBlock:(void(^)())completeCallBack;
+-(void)loadIssueHotDataSourceHandleCompleteBlock:(void(^)())completeCallBack;
 @end

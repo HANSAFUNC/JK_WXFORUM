@@ -13,13 +13,10 @@
 #import "BottomLikeView.h"
 
 @interface MomentsCell ()
-
 {
     TopHalfView * _topView;
     MidImageView * _midView;
     BottomLikeView * _bottom;
-    
-    
 }
 @end
 
@@ -62,8 +59,8 @@
         _midView.hidden = YES;
     }
     
-    
     _bottom.frame = issueItem.bottomViewFrame;
+    _bottom.issueItem = issueItem;
     
     
 }

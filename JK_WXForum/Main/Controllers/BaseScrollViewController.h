@@ -12,6 +12,6 @@
 //搜索view 自行修改
 @property (nonatomic ,strong) UISearchBar * searchBar;
 
-- (void)onceParameterConfig:(void(^)(CGFloat *fontSize,CGFloat *underLineHeight,CGFloat *number,BOOL * isSearchView))textAttriAndUnderSize  setupAllController:(void(^)())setupAllChildController;
+- (void)onceParameterConfig:(void(^)(CGFloat *fontSize,CGFloat *underLineHeight,CGFloat *number,BOOL * isSearchView , CGFloat * titleHeight))textAttriAndUnderSize  setupAllController:(void(^)()) setupAllChildController;
 
 @end

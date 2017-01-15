@@ -28,6 +28,7 @@ static NSString *const CollectionID = @"COLLECTION";
 @property (nonatomic ,assign) CGFloat fontSize;
 //下标高度
 @property (nonatomic ,assign) CGFloat  underLineH;
+@property (nonatomic ,assign) CGFloat  titleHeight;
 //判断有没有搜索View
 @property (nonatomic ,assign) BOOL isSearchView;
 @end
@@ -55,18 +56,16 @@ static NSString *const CollectionID = @"COLLECTION";
     return _underLine;
 }
 
-
-
-
-- (void)onceParameterConfig:(void(^)(CGFloat *fontSize,CGFloat *underLineHeight,CGFloat *number,BOOL * isSearchView))textAttriAndUnderSize  setupAllController:(void(^)()) setupAllChildController
+- (void)onceParameterConfig:(void(^)(CGFloat *fontSize,CGFloat *underLineHeight,CGFloat *number,BOOL * isSearchView , CGFloat * titleHeight))textAttriAndUnderSize  setupAllController:(void(^)()) setupAllChildController
 {
     CGFloat fontSize = 15;
     CGFloat underLineHeight = 2;
     CGFloat number = 5;
+    CGFloat titleHeight = 44;
     BOOL isSearchView;
     
     if (textAttriAndUnderSize) {
-        textAttriAndUnderSize(&fontSize,&underLineHeight,&number,&isSearchView);
+        textAttriAndUnderSize(&fontSize,&underLineHeight,&number,&isSearchView,&titleHeight);
         if (fontSize) {
             _fontSize = fontSize;
         }
@@ -79,6 +78,9 @@ static NSString *const CollectionID = @"COLLECTION";
         }
         if (isSearchView) {
             _isSearchView = isSearchView;
+        }
+        if (titleHeight) {
+            _titleHeight =titleHeight;
         }
         
     }else{
@@ -99,8 +101,10 @@ static NSString *const CollectionID = @"COLLECTION";
     //默认的值
     [self setupAllTitleButton:15 underLineHeight:2];
     
-    self.title = @"测试";
     self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    
+    
     
 }
 
@@ -159,8 +163,9 @@ static NSString *const CollectionID = @"COLLECTION";
 - (void)setupScrollViewWhitTiteleView
 {
     UIScrollView *topTtitleVie = [[UIScrollView alloc]init];
-    CGFloat y =_isSearchView?CGRectGetMaxY(_searchBar.frame):CGRectGetMaxY(self.navigationController.navigationBar.frame);
-    topTtitleVie.frame =CGRectMake(0, y, JKScreenW, 44);
+//    CGFloat y =_isSearchView?CGRectGetMaxY(_searchBar.frame):CGRectGetMaxY(self.navigationController.navigationBar.frame);
+//    NSLog(@"%f",y);
+    topTtitleVie.frame =CGRectMake(0, 0, JKScreenW, _titleHeight);
     topTtitleVie.backgroundColor = JKColor_RGB(240, 255, 255);;
     topTtitleVie.contentSize =CGSizeMake(self.childViewControllers.count *_MYwidth, topTtitleVie.jk_height);
     topTtitleVie.pagingEnabled =YES;
@@ -242,7 +247,7 @@ static NSString *const CollectionID = @"COLLECTION";
     
     
     UICollectionView * Collection = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:layout];
-    Collection.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//    Collection.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     Collection.pagingEnabled =YES;
     Collection.delegate = self;
     Collection.dataSource = self;

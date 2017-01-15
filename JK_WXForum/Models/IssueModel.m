@@ -22,7 +22,7 @@
         CGFloat midMargin = 60;
         CGFloat midY = CGRectGetMaxY(_topViewFrame) + 10;
         if (_imagelist.count == 1) {
-            _midImageFrame = CGRectMake(midMargin,midY,100,90);
+            _midImageFrame = CGRectMake(midMargin,midY,JKScreenW - 150,100);
         }
         if (_imagelist.count > 1) {
             _midImageFrame = CGRectMake(midMargin,midY,180 ,40);
