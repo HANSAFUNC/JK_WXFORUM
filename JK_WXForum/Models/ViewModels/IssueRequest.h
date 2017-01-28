@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface IssueRequest : NSObject
+#import "BaseRequest.h"
+@interface IssueRequest :BaseRequest
 @property (nonatomic ,strong) NSArray * issueModels;
 
 -(void)loadIssueAllDataSourceHandleCompleteBlock:(void(^)())completeCallBack;

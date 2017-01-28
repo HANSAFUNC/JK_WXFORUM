@@ -18,7 +18,10 @@
     
     [NetWorkSingleton requestData:GET requestUrl:url parameters:nil finlishCallBack:^(id responseObject, NSError *error) {
         NSDictionary * dict = responseObject[@"variables"][@"thread"];
-         _webModel = [webModel mj_objectWithKeyValues:dict];
+        NSArray * arr = responseObject[@"variables"][@"postlist"];
+        
+        _webModel = [webModel mj_objectWithKeyValues:dict];
+        _postList = arr;
         
         if (error) {
             NSLog(@"%@",error);
@@ -28,7 +31,6 @@
         }
         
     }];
-    
 }
 
 @end

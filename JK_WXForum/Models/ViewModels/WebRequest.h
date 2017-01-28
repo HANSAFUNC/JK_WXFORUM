@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 @class webModel;
 @interface WebRequest : NSObject
-@property (nonatomic ,strong) webModel * webModel;
+@property (nonatomic ,strong) webModel *webModel;
+@property (nonatomic ,strong) NSArray *postList;
 - (void)loadHybridWebDataFormJavaScriptRequestTid:(NSString *)tid HandleCompleteBlock:(void(^)())completeCallBack;
 @end

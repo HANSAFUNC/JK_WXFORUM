@@ -16,8 +16,8 @@
 @interface BaseWebViewController ()<UIWebViewDelegate>
 {
     UIWebView * _webView;
+    NSArray * _postList;
     webModel * _webModel;
-    
     
 }
 @property (nonatomic ,strong) WebRequest * webRequest;
@@ -44,6 +44,7 @@
     [self.webRequest loadHybridWebDataFormJavaScriptRequestTid:generalModel.tid HandleCompleteBlock:^{
         NSLog(@"%@",self.webRequest.webModel.message);
         _webModel = self.webRequest.webModel;
+        _postList = self.webRequest.postList;
         NSURL * url = [[NSBundle mainBundle]URLForResource:@"index" withExtension:@"html"];
         NSURLRequest * request = [NSURLRequest requestWithURL:url];
         [_webView loadRequest:request];
@@ -103,28 +104,35 @@
 - (void)objcCallJavaScritpCode {
     [self sendContentTextToJavaScriptFunc];
     [self sendSubjectStringToJavaScriptFunc];
-    [self sendImageUrlStringToJavaScriptFunc];
+    [self sendImageSizeStringToJavaScriptFunc];
     [self sendUserNameStringToJavaScriptFunc];
     [self sendIconImageStringToJavaScriptFunc];
     [self sendTimeAndLevelStringToJavaScriptFunc];
     [self sendReplyAndViewsStringToJavaScriptFunc];
+    [self sendCommentListArgmentToJavaScriptFunc];
     
-    
-    
-    
-}
-
--(void)sendImageUrlStringToJavaScriptFunc {
-//    [UIImage imageWithContentsOfFile:<#(nonnull NSString *)#>]
-    NSString * url = [[NSBundle mainBundle]bundlePath ];
-    [self objcCallJavaScriptFunctionName:@"insertLeftAndRightImage" someArg:_webModel.author, nil];
+  
     
 }
+//评论区
+-(void)sendCommentListArgmentToJavaScriptFunc {
+    
+    [self objcCallJavaScriptFunctionName:@"insertCommentCellArgments" someArg:_postList, nil];
+    
+}
+//中部两条图片
+-(void)sendImageSizeStringToJavaScriptFunc {
+    float size = ([self calculateImageWidthScaleInIOS]-80)/2;
+    [self objcCallJavaScriptFunctionName:@"insertLeftAndRightImage" someArg:@(size), nil];
+    
+}
+//作者
 -(void)sendUserNameStringToJavaScriptFunc {
     
     [self objcCallJavaScriptFunctionName:@"insertTitleNameString" someArg:_webModel.author, nil];
     
 }
+//时间级别
 -(void)sendTimeAndLevelStringToJavaScriptFunc {
     
     NSString *TimeAndLevel = [NSString stringWithFormat:@"%@级  楼主/%@",_webModel.grouptitle,_webModel.dateline];
@@ -145,6 +153,7 @@
     }];
     [self objcCallJavaScriptFunctionName:@"insertIconImageString" someArg:arg, nil];
 }
+
 //主题
 -(void)sendSubjectStringToJavaScriptFunc {
     
@@ -152,9 +161,8 @@
     [self objcCallJavaScriptFunctionName:@"insertSubjectString" someArg:subject, nil];
     
 }
-
+//内容
 - (void)sendContentTextToJavaScriptFunc {
-    
     const NSString *body = _webModel.message;
     const NSArray *images = _webModel.attachimg;
     for (NSDictionary * dict in images) {
@@ -163,7 +171,9 @@
         NSString * iamgeHtml = [NSString stringWithFormat:@"<div id=\"imgs\" align =\"center\"> <img src =\"%@\" width = \"%fpx\"> </div>",url,[self calculateImageWidthScaleInIOS]];
         body = [body stringByReplacingOccurrencesOfString:aid withString:iamgeHtml];
     }
-    [self objcCallJavaScriptFunctionName:@"insertString" someArg:body, nil];
+    
+    
+    [self objcCallJavaScriptFunctionName:@"insertString" someArg:body , nil];
     
 }
 
@@ -183,6 +193,7 @@
         
         [Arguments addObject:arg];
         NSLog(@"%@",arg);
+//        NSAssert([arg isKindOfClass:[NSObject class]], @"Error:不是对象");
         
     }
     va_end(list);

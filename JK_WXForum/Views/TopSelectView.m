@@ -20,10 +20,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    [self setupTopHalfViewSubView];
-    [self setupBottomHalfViewSubview];
+    
 }
-
 
 
 - (UIImage*) imageToTransparent:(UIImage*) image
@@ -226,10 +224,21 @@ void ProviderReleaseData (void *info, const void *data, size_t size)
         CGFloat y = 0;
         CGFloat w = WIDTH(self.bottomHalfView) / 4;
         CGFloat h = HEIGHT(self.bottomHalfView);
+        NSLog(@"%f",w);
         CGFloat x = i * w;
         btn.frame = CGRectMake(x, y, w, h);
         [self.bottomHalfView addSubview:btn];
     }
+}
+-(void)layoutSubviews {
+    [super layoutSubviews];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [self setupTopHalfViewSubView];
+        [self setupBottomHalfViewSubview];
+    });
+    
+    NSLog(@"--------");
 }
 
 + (instancetype)loadXib{

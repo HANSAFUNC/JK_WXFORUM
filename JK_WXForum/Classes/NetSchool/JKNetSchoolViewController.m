@@ -56,6 +56,10 @@ const static CGFloat kTopViewHeight = 140;
     [super setupBarButtonItemType:1 normalImage:[UIImage imageNamed:@"pen"] hightLightImage:nil addTarget:self action:@selector(touchUpPublishArticle)];
 }
 
+-(void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+}
 - (void)setupTopSelectView {
     TopSelectView * selectView = [TopSelectView loadXib];
     selectView.frame = CGRectMake(0, 0,JKScreenW, kTopViewHeight);

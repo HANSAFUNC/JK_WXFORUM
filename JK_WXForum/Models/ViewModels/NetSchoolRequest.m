@@ -7,7 +7,6 @@
 //
 
 #import "NetSchoolRequest.h"
-#import "NetWorkSingleton.h"
 #import "GeneralModel.h"
 #import <MJExtension/MJExtension.h>
 
@@ -23,18 +22,9 @@
         if (completeCallBack) {
             completeCallBack();
         }
-        
-        
+  
     }];
     
 }
-- (void)cancel {
-    [[NetWorkSingleton sharedManager].tasks makeObjectsPerformSelector:@selector(cancel)];
-}
-- (void)pasue {
-    [[NetWorkSingleton sharedManager].tasks makeObjectsPerformSelector:@selector(pasue)];
-}
-- (void)resume {
-    [[NetWorkSingleton sharedManager].tasks makeObjectsPerformSelector:@selector(resume)];
-}
+
 @end

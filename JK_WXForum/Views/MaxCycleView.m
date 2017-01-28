@@ -26,10 +26,9 @@ static NSString * const CycleViewCellID = @"CycleViewCell";
     _pageControl.numberOfPages = maxCycleModels.count;
     [_collectionView reloadData];
     if (maxCycleModels) {
-        [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:maxCycleModels.count * 500 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+        [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:maxCycleModels.count * 200 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
         [self startTimer];
     }
-    
     
 }
 
@@ -67,7 +66,7 @@ static NSString * const CycleViewCellID = @"CycleViewCell";
     
     [_collectionView setPagingEnabled:YES];
     [_collectionView setShowsHorizontalScrollIndicator:NO];
-    ;    [_collectionView setCollectionViewLayout:layout];
+    [_collectionView setCollectionViewLayout:layout];
     [_collectionView registerNib:[UINib nibWithNibName:@"CycleViewCell" bundle:nil] forCellWithReuseIdentifier:CycleViewCellID];
     
 }
@@ -89,14 +88,13 @@ static NSString * const CycleViewCellID = @"CycleViewCell";
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CycleViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:CycleViewCellID forIndexPath:indexPath];
     cell.maxCycleModel =self.maxCycleModels[indexPath.row % self.maxCycleModels.count];
-    cell.backgroundColor = JKColor_RANDOM;
     return cell;
     
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    CGFloat offsetX = scrollView.contentOffset.x + WIDTH(scrollView) * 0.5;
-    NSInteger currentPage = (NSInteger)(offsetX / WIDTH(scrollView)) % self.maxCycleModels.count;
+    CGFloat offsetX = scrollView.contentOffset.x + JKScreenW * 0.5;
+    NSInteger currentPage = (NSInteger)(offsetX / JKScreenW) % self.maxCycleModels.count;
     _pageControl.currentPage = currentPage;
     
 }
@@ -108,6 +106,11 @@ static NSString * const CycleViewCellID = @"CycleViewCell";
     
     [self startTimer];
 }
+
+//-(void)didMoveToWindow {
+//    NSLog(@"window");
+//}
+
 
 
 

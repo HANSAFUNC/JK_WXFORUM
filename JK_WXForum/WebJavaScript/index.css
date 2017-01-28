@@ -1,4 +1,4 @@
-a, address, b, big, blockquote,head, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var{
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var{
     padding: 0;
     margin: 0;
 }
@@ -10,23 +10,23 @@ a, address, b, big, blockquote,head, body, center, cite, code, dd, del, div, dl,
     display : inline-block;
     
     
-/*    padding : 10px 0px;*/
-/*    line-height : 60px;*/
-/*    height : 60px;*/
+    /*    padding : 10px 0px;*/
+    /*    line-height : 60px;*/
+    /*    height : 60px;*/
     /*    padding : 0px,5px;*/
     
 }
 #header-Title .header-TTT {
     margin-left : 20px;
     color : white;
-/*    margin-bottom : 30px;*/
+    /*    margin-bottom : 30px;*/
 }
 
 #header-Title .sub-replyTitle {
     float : right;
     margin-bottom : 10px;
     margin-right : 10px;
-/*    margin-bottom : 2px;*/
+    /*    margin-bottom : 2px;*/
     font-size : 13px;
     color : white;
 }
@@ -87,12 +87,14 @@ a, address, b, big, blockquote,head, body, center, cite, code, dd, del, div, dl,
 body {
     
     width : 100%;
+    Background : rgba(240,255,255,1);
+    
 }
 
-body #contenr{
+body #main-content{
     /*    min-width : 320px;*/
     /*    max-width : 375px;*/
-    width : 355px;
+    /*    width : ((100%)-20)px;*/
     /*    margin : 0 auto;*/
     padding : 0 10px;
     Background : rgba(240,255,255,1);
@@ -101,10 +103,126 @@ body #contenr{
 
 body #content div{
     word-break:break-all;
-    width : 355px;
+    /*    width : 355px;*/
     Background : #fff;
 }
+.bottom-top {
+    /*    float : left;*/
+    
+    font-size : 10px;
+    text-align : center;
+    
+}
+.bottom-bottom {
+    
+    font-size : 10px;
+    text-align : center;
+}
+.left-img{
+    
+    height : 10px;
+    /*    margin-right : 10px;*/
+    margin-top :5px;
+    float : left;
+    /*    display : inline-block;*/
+    
+}
 
+.right-img {
+    height : 10px;
+    margin-top : 5px;
+    float : right;
+    
+}
+
+.title-span {
+    
+    text-align : center;
+    white-space:nowrap;
+    word-break:keep-all
+    
+}
+.bottom-mid{
+    font-size : 0;
+    margin : 20px auto;
+    float : left;
+    
+    
+    
+}
+.bottom-mid img{
+    /*    width : 50px;*/
+    /*    display : block;*/
+    margin : 0 10px;;
+    vertical-align:middle;
+    height : 30px;
+    
+}
+
+#post-list {
+    /*    margin-top : 10px;*/
+}
+.cell {
+    margin: 10px 0;
+    background:white;
+    
+}
+.cell div {
+    background:white;
+}
+.comment-UserInfo {
+    /*margin-bottom: 10px;*/
+    font-size :0px;
+/*    vertical-align:middle;*/
+}
+.comment-message {
+    margin : 15px 5px;
+}
+.comment-interaction span{
+    margin-left : 10px;
+    color : gray;
+    font-size : 14px;
+    /*    vertical-align : top;*/
+    /*    text-align : center;*/
+}
+.comment-interaction  img {
+    vertical-align : top;
+}
+
+.comment-fieldcomment {
+    margin-left : 5px;
+}
+.comment-yellowseed {
+    margin-left : 30px;
+}
+.comment-replies {
+    float:right;
+    margin-right : 5px;
+}
+.comment-IconImage {
+    width:30px;
+    height:30px;
+    border-radius:15px;
+    vertical-align:middle;
+}
+.comment-username {
+    font-size : 15px;
+    margin-left:5px;
+    vertical-align:middle;
+
+}
+.comment-level {
+    font-size:15px;
+    vertical-align:middle;
+    color : gray;
+    
+}
+.comment-dateline{
+    font-size:15px;
+    vertical-align:middle;
+    color:gray;
+    margin-right:10px;
+}
 /*body #imgs img{*/
 /*    width : 365px;*/
 /*    height : 400px;*/

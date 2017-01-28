@@ -7,11 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface NetSchoolRequest : NSObject
+#import "BaseRequest.h"
+@interface NetSchoolRequest :BaseRequest
 @property (nonatomic ,strong) NSArray * netSchoolModels;
 - (void)loadNetSchoolDataSourceHandleCompleteBlock:(void(^)())completeCallBack;
-- (void)cancel;
-- (void)pasue;
-- (void)resume;
+
 @end

@@ -28,6 +28,5 @@ typedef void(^finlishCallBack)(id result, NSError *  error);
 //+ (NetWorkSingleton *)extensionContentTypeManager;
 
 + (void)requestData:(RequestType)type requestUrl:(NSString *)requestUrl parameters:(NSDictionary *)parameters  finlishCallBack:(void(^)(id responseObject,NSError *  error))finlishCallBack;
-
-
+-(NSString *)currentNetworkReachabilityStatusString;
 @end

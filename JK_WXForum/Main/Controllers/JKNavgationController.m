@@ -29,8 +29,6 @@
     //    [[UINavigationBar appearance] setBackgroundImage:bgImage forBarMetrics:UIBarMetricsDefault];
     [appearance setTintColor:JKColor_RGB(255, 255, 255)];
     
-    
-    
 }
 
 -(void)viewDidLoad {

@@ -7,15 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface GeneralRequestVM : NSObject
+#import "BaseRequest.h"
+@interface GeneralRequestVM : BaseRequest
 @property (nonatomic ,strong) NSArray * GeneralModels;
 @property (nonatomic ,strong) NSArray * navigationModels;
 @property (nonatomic ,strong) NSArray * maxCycleModels;
 
 - (void)loadGeneralDataFinshedCallBack:(void(^)())finshedCallBack;
 - (void)loadNetSchoolDataSourceHandleCompleteBlock:(void(^)())completeCallBack;
-- (void)cancel;
-- (void)resume;
-- (void)pasue;
+
 @end

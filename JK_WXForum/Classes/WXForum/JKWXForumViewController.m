@@ -15,6 +15,7 @@
 #import "GeneralModel.h"
 #import "MaxCycleView.h"
 #import <MJRefresh/MJRefresh.h>
+#import "RunlooperUtils.h"
 typedef NS_ENUM(NSInteger,SelectTargetFid) {
      //闲言碎语
     SelectTittleTattle = 84,
@@ -79,8 +80,17 @@ const static CGFloat kCycleViewHeight = 140;
         [self.tableView.mj_header endRefreshing];
         NSLog(@"%@",self.GeneralVm)
         
-        
     }];
+    
+    [self.GeneralVm currentNetworkStatusString];
+    
+    
+}
+static void callBackFromRunloop(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info){
+    static NSInteger i;
+    NSLog(@"%ld",i++);
+//    UIViewController * vc = (__bridge UIViewController *)info;
+//    NSLog(@"%@",[vc description]);
     
 }
 - (void)setupMaxCycleView {
@@ -205,6 +215,18 @@ const static CGFloat kCycleViewHeight = 140;
 
 -(void)dealloc {
     NSLog(@"%s",__func__);
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [_maxCycleView stopTimer];
+    [[RunlooperUtils new]removeRunloopObserver:(__bridge void *)(self) action:&callBackFromRunloop];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [_maxCycleView startTimer];
+    [[RunlooperUtils new] addRunloopObserver:(__bridge void *)(self) action:&callBackFromRunloop];
 }
 
 

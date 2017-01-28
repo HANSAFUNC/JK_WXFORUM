@@ -11,5 +11,7 @@
 @interface MaxCycleView : UIView
 @property (nonatomic ,strong) NSArray * maxCycleModels;
 +(instancetype)loadXib;
+-(void)startTimer;
+-(void)stopTimer;
 
 @end

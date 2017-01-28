@@ -7,7 +7,6 @@
 //
 
 #import "GeneralRequestVM.h"
-#import "NetWorkSingleton.h"
 #import "MJExtension.h"
 #import "GeneralModel.h"
 #import "maxCycleModel.h"
@@ -26,10 +25,8 @@
             finshedCallBack();
         }
         
-        
     }];
 }
-
 
 -(void)loadNetSchoolDataSourceHandleCompleteBlock:(void(^)())completeCallBack {
     //    http://api.pyua.net/?v=1&module=schoolguide&page=
@@ -43,15 +40,6 @@
     
 }
 
-- (void)cancel {
-    [[NetWorkSingleton sharedManager].tasks makeObjectsPerformSelector:@selector(cancel)];
-    
-}
-- (void)pasue {
-    [[NetWorkSingleton sharedManager].tasks makeObjectsPerformSelector:@selector(pasue)];
-}
-- (void)resume {
-    [[NetWorkSingleton sharedManager].tasks makeObjectsPerformSelector:@selector(resume)];
-}
+
 
 @end

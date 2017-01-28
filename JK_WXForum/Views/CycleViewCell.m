@@ -21,7 +21,11 @@
 
 -(void)setMaxCycleModel:(maxCycleModel *)maxCycleModel {
     _maxCycleModel = maxCycleModel;
-    [_cycleImage sd_setImageWithURL:[NSURL URLWithString:maxCycleModel.src]];
+    [UIView transitionWithView:self.contentView duration:1.0 options: UIViewAnimationOptionTransitionFlipFromTop  animations:^{
+        [_cycleImage sd_setImageWithURL:[NSURL URLWithString:maxCycleModel.src]];
+    } completion:nil];
+    
+    
     
 }
 
